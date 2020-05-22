@@ -50,7 +50,7 @@ Author of Ported Issue | 5 | Additional points for a contribution that ports (up
 
 ## DevDocs awards and points
 
-Contributors and Maintainers can also earn rewards for merged submissions to the [DevDocs repository](https://github.com/magento/devdocs). These earned points add to contributor totals. Like code contributions, the DevDocs team assesses the PRs and applies labels to determine the level of work and achievements. Each PR receives one base achievement and potentially additional achievements.
+Contributors and Maintainers can also earn rewards for merged submissions to the [DevDocs repository](https://github.com/OpenMage/devdocs). These earned points add to contributor totals. Like code contributions, the DevDocs team assesses the PRs and applies labels to determine the level of work and achievements. Each PR receives one base achievement and potentially additional achievements.
 
 See the following examples for calculated reward points:
 
@@ -60,7 +60,7 @@ See the following examples for calculated reward points:
 ### Base achievements
 {:.no_toc}
 
-Every merged PR to the [DevDocs repository](https://github.com/magento/devdocs) receives one base achievement. If you enter a PR with editorial fixes and new content, you receive the Improvement and additional achievements.
+Every merged PR to the [DevDocs repository](https://github.com/OpenMage/devdocs) receives one base achievement. If you enter a PR with editorial fixes and new content, you receive the Improvement and additional achievements.
 
 Achievement | Points | Description
 | ------------ | --- | --- |

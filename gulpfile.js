@@ -34,7 +34,6 @@ var gulp = require('gulp'),
       	'guides/**/*.{html,md}',
         '_includes/**/*.html',
 			  '_layouts/**/*.html',
-        '_videos/**/*',
   //      'css/**/*.css',
         '*.html'
 		],

@@ -1,1 +1,0 @@
-../../../v2.2/cloud/deploy/cloud-deployment-process.md

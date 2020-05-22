@@ -12,7 +12,6 @@ If you have issues, receive error messages, or need additional How Tos, see our 
 
 * Search using keywords to find answers and help
 * Browse through various categories
-* Watch videos for more Information
 * Provide feedback as you read articles
 
 New to knowledge bases? See the [Magento Help Center User Guide](https://support.magento.com/hc/en-us/articles/360000913794).

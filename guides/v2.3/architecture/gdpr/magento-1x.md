@@ -1,1 +1,0 @@
-../../../v2.2/architecture/gdpr/magento-1x.md

@@ -101,7 +101,7 @@ Labels applied to issues through verification and completion. For details on the
 ### DevDocs
 {:.no_toc}
 
-All [contributions to DevDocs](https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md) receive the following labels:
+All [contributions to DevDocs](https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md) receive the following labels:
 
 * `New topic`- New file submissions for content that has never existed on devdocs
 * `Major update` - Significant updates to existing content, such as a new section or example

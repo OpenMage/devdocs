@@ -12,9 +12,9 @@ Type of Doc:
 - [ ] Topic Update, Devdoc link:
 - [ ] Other
 
-Magento 2 GitHub Issue: https://github.com/magento/devdocs/issues/link
+Magento 2 GitHub Issue: https://github.com/OpenMage/devdocs/issues/link
 
-Magento 2 GitHub PR: https://github.com/magento/devdocs/pull/link
+Magento 2 GitHub PR: https://github.com/OpenMage/devdocs/pull/link
 
 Magento 2 version:
 - [ ] 2.1.X
@@ -43,7 +43,7 @@ Thank you for taking the time to request updates for your Community Engineering 
 GitHub Issues should only be created for problems/topics related to this project's codebase.
 
 Before submitting this issue, please make sure you are complying with our Code of Conduct:
-https://github.com/magento/devdocs/blob/develop/.github/CODE_OF_CONDUCT.md
+https://github.com/OpenMage/devdocs/blob/develop/.github/CODE_OF_CONDUCT.md
 
 Issues that do not comply with our Code of Conduct or do not contain enough information may be closed at the maintainers' discretion.
 

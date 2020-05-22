@@ -1,1 +1,0 @@
-../../../../v2.1/rest/tutorials/orders/order-config-store.md

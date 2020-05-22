@@ -1,1 +1,0 @@
-../../../v2.2/cloud/architecture/pro-architecture.md

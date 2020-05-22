@@ -14,7 +14,7 @@ pages:
     - label: DevDocs Contributions
       children:
         - label: Contribution Guidelines
-          url: https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md
+          url: https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md
 
         - label: Suggested topics for contribution
           url: /contributor-guide/contributing_docs_suggested.html

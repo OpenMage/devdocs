@@ -1,1 +1,0 @@
-../../v2.1/security/two-factor-authentication.md

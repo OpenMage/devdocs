@@ -38,12 +38,9 @@ We have channels for each project. These channels are recommended for new member
 ## Resources and guides
 
 - *GitHub* [Magento Resources][23] curated list by [Alessandro Ronchi][30]
-- *Videos* [Mage2.tv][24] 
 - *Podcast* [MageTalk][25] by [Phillip Jackson and Kalen][27] 
 - *Vlog* [eCommerceAholic][26] by [TJ Gamble][28]
 - *Statistics* [Magestats][32] by [Marcel Hauri][33]
-- *Videos* [Magento Dev Channel with Max Pronko][34] by [Max Pronko][35]
-- *Courses* [Magento Courses][36] by [Max Pronko][35]
 
 ## Magento APIs
 
@@ -52,7 +49,6 @@ We have channels for each project. These channels are recommended for new member
 
 ## Install/deploy
 
-- *GitHub* [Magento 2 Docker][37] by [Mark Shust][38] (supports Magento 2.3.0, PHP 7.2, Elasticsearch)
 - *Presentation* [48 Hour Launches and Other Lessons Learned With Large-Scale Digital Transformations][29] by Joshua Warren of Creatuity
 - *Blog post* [Magento 2 - Launch Checklist][21] by Syed Muneeb Ul Hasan 
 - *Presentation* [Magento 2 Deployment: What you should know][4] by Olga KopyLova
@@ -82,7 +78,7 @@ We have channels for each project. These channels are recommended for new member
 
 -  *Presentation* [Premium performance with PHP 7 and Varnish][15] by Miguel Balparda 
 
-[contribute]: https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md
+[contribute]: https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md
 [Magento Community Engineering Slack]: https://magentocommeng.slack.com
 [engcom@magento.com]: mailto:engcom@magento.com
 [self signup]: https://tinyurl.com/engcom-slack
@@ -91,7 +87,7 @@ We have channels for each project. These channels are recommended for new member
 [public-backlog]: https://magentocommeng.slack.com/messages/CCV3J3RV5
 [devdocs]: https://magentocommeng.slack.com/messages/CAN932A3H
 [0]: https://github.com/DavidLambauer/awesome-magento2 
-[1]: https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md
+[1]: https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md
 [2]: http://www.slideshare.net/StaceyWhitney1/mage-titans-usa-2016-joshua-warren-magento-2-integrations
 [3]: http://www.slideshare.net/vrann/mage-titans-usa-2016-magentofacebookrabbitmq
 [4]: http://www.slideshare.net/OlgaKopylova2/m2-deployment
@@ -114,7 +110,6 @@ We have channels for each project. These channels are recommended for new member
 [21]: https://magenticians.com/magento-2-launch-checklist/
 [22]: https://docs.google.com/presentation/d/1NdtNz_LBxk-JsCBy8AvekZAkSPWOE0WCzE14Y9ki-5Q/mobilepresent?slide=id.g3444c1e91c_0_10
 [23]: https://github.com/aleron75/mageres
-[24]: https://www.mage2.tv
 [25]: https://magetalk.com/
 [26]: https://www.youtube.com/channel/UCSH4_56yf5khLwTK9q71IGw
 [27]: https://magetalk.com/about/
@@ -124,8 +119,5 @@ We have channels for each project. These channels are recommended for new member
 [31]: https://twitter.com/JoshuaSWarren
 [32]: https://magestats.net/
 [33]: https://twitter.com/mhauri
-[34]: https://www.youtube.com/maxpronko
-[35]: https://twitter.com/max_pronko
-[36]: https://www.maxpronko.com/all-courses/
 [37]: https://github.com/markoshust/docker-magento
 [38]: https://twitter.com/markshust

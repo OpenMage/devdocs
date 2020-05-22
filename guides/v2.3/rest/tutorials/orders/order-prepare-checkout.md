@@ -1,1 +1,0 @@
-../../../../v2.2/rest/tutorials/orders/order-prepare-checkout.md

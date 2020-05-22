@@ -1,1 +1,0 @@
-../../../v2.1/cloud/basic-information/starter-architecture.md

@@ -163,10 +163,6 @@
       url: /advanced-reporting/overview.html
       exclude_versions: ['2.0','2.1']
 
-    - label: B2B
-      url: /b2b/bk-b2b.html
-      exclude_versions: ['2.0','2.1']
-
     - label: Checkout
       url: /howdoi/checkout/checkout_overview.html
 
@@ -200,8 +196,4 @@
 
     - label: Magento Support
       url: /community/resources/support.html
-      versionless: true
-
-    - label: Video Tutorials
-      url: /videos/
       versionless: true

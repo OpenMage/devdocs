@@ -1,6 +1,6 @@
 # Magento Developer Documentation
 
-Welcome! This site contains the latest Magento developer documentation for ongoing Magento 2.x releases. For additional information, see our [Contribution Guide](https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md).
+Welcome! This site contains the latest Magento developer documentation for ongoing Magento 2.x releases. For additional information, see our [Contribution Guide](https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md).
 
 ## Contributors
 
@@ -169,7 +169,7 @@ To use Docker and Docker Compose, first download and install Docker for the appr
 1. Using [git](https://git-scm.com/), [clone](https://help.github.com/articles/cloning-a-repository/) this repository.
 2. Navigate to the resulting directory.
 3. Run `docker-compose up` to initialize the build process. Refer [here](https://docs.docker.com/compose/gettingstarted/#step-4-build-and-run-your-app-with-compose) for more details on the use of `docker-compose`.
-4. Visit `http://localhost:4000/` in a web browser, and you should be presented with a local copy of the Magento DevDocs. The configuration for the local port (`4000` by default) is found in the [docker-compose.yml](https://github.com/magento/devdocs/blob/develop/docker-compose.yml) file. If another port is desired, please refer [here](https://docs.docker.com/compose/compose-file/compose-file-v2/#ports) for further details regarding Docker Compose port mapping.
+4. Visit `http://localhost:4000/` in a web browser, and you should be presented with a local copy of the Magento DevDocs. The configuration for the local port (`4000` by default) is found in the [docker-compose.yml](https://github.com/OpenMage/devdocs/blob/develop/docker-compose.yml) file. If another port is desired, please refer [here](https://docs.docker.com/compose/compose-file/compose-file-v2/#ports) for further details regarding Docker Compose port mapping.
 
 ### Addressing Problems With Docker Build
 
@@ -280,7 +280,7 @@ You may have to close and reopen the Git Bash application after the Choco instal
 1.  Change to the directory you created for Git repositories and clone the DevDocs repository.
 
     ```bash
-    git clone git@github.com:magento/devdocs.git
+    git clone git@github.com:OpenMage/devdocs.git
     ```
 
 1.  Change to the `devdocs` directory.
