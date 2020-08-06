@@ -7,13 +7,13 @@ logo: DevDocs
 description: OpenMage LTS Developer Documentation.
 
 # the base protocol and domain
-url: https://www.openmage.org/devdocs
+url: https://devdocs.openmage.org
 
 # Site theme. https://jekyllrb.com/docs/themes/
 theme: devdocs
 
 # Base url that forms 
-baseurl: ""
+baseurl: "https://devdocs.openmage.org"
 
 # Specific settings for different scopes.
 #
@@ -36,22 +36,6 @@ defaults:
       path: guides/m1x
     values:
       layout: null
-
-  -
-    scope:
-      path: mftf/2.2
-    values:
-      group: magento-functional-testing-framework-guide
-      functional_areas:
-        - Test
-
-  -
-    scope:
-      path: mftf/2.3
-    values:
-      group: magento-functional-testing-framework-guide-2_3
-      functional_areas:
-        - Test
 
 ##########################
 # Plugins and extensions #
@@ -85,22 +69,7 @@ kramdown:
 # LiveReload monitors changes in the file system and refreshes browser when Jekyll is in serving mode.
 # http://livereload.com/
 #
-livereload: true
-
-# Search engine settings. For more details, refer to https://github.com/algolia/jekyll-algolia
-#
-algolia:
-  application_id: E642SEDTHL
-  index_name: devdocs
-  api_key: d2d0f33ab73e291ef8d88d8b565e754c
-  files_to_exclude:
-    - guides/m1x/**/*.html
-    - guides/m1x/**/*.md
-    - swagger
-    - redoc
-
-google:
-  analytics: UA-66243208-1
+livereload: false
 
 # Toggles the _plugin/html-check-hook.rb script that checks links in the generated HTML
 #
