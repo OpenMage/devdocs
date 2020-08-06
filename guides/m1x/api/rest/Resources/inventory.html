@@ -34,7 +34,7 @@ title: Inventory
 </ul>
 
 <div class="msg-box important">
-    <img src="{{ site.baseurl }}/common/images/m1x/icon-important.png" alt="important" align="left" width="40"><strong>Important</strong>: The default response for all APIs is JSON; however, this page currently uses mostly XML examples. We don't maintain this documentation much anymore so if you'd like to contribute some JSON, we'll acknowledge your help on this page. <a href="https://github.com/OpenMage/devdocs/blob/develop//guides/m1x/api/rest/Resources/inventory.html" target="_blank">Edit this page on GitHub</a> if you can help us out.
+    <img src="{{ site.baseurl }}/guides/m1x/images/icon-important.png" alt="important" align="left" width="40"><strong>Important</strong>: The default response for all APIs is JSON; however, this page currently uses mostly XML examples. We don't maintain this documentation much anymore so if you'd like to contribute some JSON, we'll acknowledge your help on this page. <a href="{{ site.m1xgithuburl }}/api/rest/Resources/inventory.html" target="_blank">Edit this page on GitHub</a> if you can help us out.
 </div>
 
 <h3><a name="RESTAPI-Resource-StockItems-RESTAPI-StockItems"></a>REST API: Stock Items</h3>
@@ -43,7 +43,7 @@ title: Inventory
 
 <p>Allows you to manage existing stock items. Inventory management is available only for Admin.</p>
 
-<p><b>URL Structure</b>: <a href="http://magentohost/api/rest/stockitems">http://magentohost/api/rest/stockitems</a><br/> <b>Version</b>: 1</p>
+<p><b>URL Structure</b>: http://magentohost/api/rest/stockitems<br/> <b>Version</b>: 1</p>
 
 <h5><a name="RESTAPI-Resource-StockItems-HTTPMethod-GET-stockitems"></a>HTTP Method: GET /stockitems</h5>
 
@@ -61,7 +61,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>GET <a href="http://magentohost/api/rest/stockitems">http://magentohost/api/rest/stockitems</a></td>
+            <td>GET http://magentohost/api/rest/stockitems</td>
         </tr>
     </table>
 </div>
@@ -70,7 +70,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;data_item&gt;
@@ -130,7 +130,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>GET <a href="http://magentohost/api/rest/stockitems">http://magentohost/api/rest/stockitems</a></td>
+            <td>GET http://magentohost/api/rest/stockitems</td>
         </tr>
     </table>
 </div>
@@ -139,7 +139,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
                     <pre class="theme: Default; brush: java; gutter: false">[{"item_id":"1","qty":"100.0000","backorders":"0","min_sale_qty":"1.0000","max_sale_qty":"0.0000","low_stock_date":null,"manage_stock":"0","stock_status_changed_auto":"0","enable_qty_increments":"0"},{"item_id":"2","qty":"100.0000","backorders":"0","min_sale_qty":"1.0000","max_sale_qty":"0.0000","low_stock_date":null,"manage_stock":"0","stock_status_changed_auto":"0","enable_qty_increments":"0"},{"item_id":"3","qty":"1.0000","backorders":"0","min_sale_qty":"1.0000","max_sale_qty":"0.0000","low_stock_date":null,"manage_stock":"0","stock_status_changed_auto":"0","enable_qty_increments":"0"},{"item_id":"4","qty":"0.0000","backorders":"0","min_sale_qty":"1.0000","max_sale_qty":"0.0000","low_stock_date":null,"manage_stock":"0","stock_status_changed_auto":"1","enable_qty_increments":"0"}]</pre>
                 </div>
             </div>
@@ -335,7 +335,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>PUT <a href="http://magentohost/api/rest/stockitems">http://magentohost/api/rest/stockitems</a></td>
+            <td>PUT http://magentohost/api/rest/stockitems</td>
         </tr>
     </table>
 </div>
@@ -345,7 +345,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;data_item item_id="157"&gt;
@@ -383,7 +383,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;success&gt;
@@ -441,7 +441,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>GET <a href="http://magentohost/api/rest/stockitems/1">http://magentohost/api/rest/stockitems/1</a></td>
+            <td>GET http://magentohost/api/rest/stockitems/1</td>
         </tr>
     </table>
 </div>
@@ -451,7 +451,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;item_id&gt;1&lt;/item_id&gt;
@@ -492,7 +492,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>GET <a href="http://magentohost/api/rest/stockitems/157">http://magentohost/api/rest/stockitems/157</a>
+            <td>GET http://magentohost/api/rest/stockitems/157
             </td>
         </tr>
     </table>
@@ -503,7 +503,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
                     <pre class="theme: Default; brush: java; gutter: false">{"item_id":"1","product_id":"1","stock_id":"1","qty":"200.0000","min_qty":"0.0000","use_config_min_qty":"1","is_qty_decimal":"1","backorders":"0","use_config_backorders":"1","min_sale_qty":"1.0000","use_config_min_sale_qty":"1","max_sale_qty":"0.0000","use_config_max_sale_qty":"1","is_in_stock":"1","low_stock_date":null,"notify_stock_qty":"10.0000","use_config_notify_stock_qty":"0","manage_stock":"0","use_config_manage_stock":"1","stock_status_changed_auto":"0","use_config_qty_increments":"1","qty_increments":"0.0000","use_config_enable_qty_inc":"1","enable_qty_increments":"0","is_decimal_divided":"1"}</pre>
                 </div>
             </div>
@@ -526,7 +526,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>PUT <a href="http://magentohost/api/rest/stockitems/1">http://magentohost/api/rest/stockitems/1</a></td>
+            <td>PUT http://magentohost/api/rest/stockitems/1</td>
         </tr>
     </table>
 </div>
@@ -536,7 +536,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;qty&gt;99&lt;/qty&gt;
@@ -553,7 +553,7 @@ title: Inventory
 <div class='panelMacro'>
     <table class='infoMacro'>
         <tr>
-            <td>PUT <a href="http://magentohost/api/rest/stockitems/1">http://magentohost/api/rest/stockitems/1</a></td>
+            <td>PUT http://magentohost/api/rest/stockitems/1</td>
         </tr>
     </table>
 </div>
@@ -563,7 +563,7 @@ title: Inventory
     <div class="panelContent">
         <div class="code panel" style="border-width: 1px;">
             <div class="codeContent panelContent">
-                <div id="root">
+                <div>
 		<pre class="theme: Default; brush: java; gutter: false">{
 "qty":"99"
 }</pre>
@@ -623,4 +623,4 @@ title: Inventory
 </table>
 
 
-<?php include(__ROOT__ . 'footer.php'); ?>		    
+		    
