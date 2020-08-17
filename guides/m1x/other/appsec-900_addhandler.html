@@ -1,27 +1,7 @@
 ---
+title: 'Discover credit card validation issue: Magento EE 1.9.1.1&mdash;.13.1.0 and CE 1.4.2.0&mdash;1.8.1.0'
+layout: m1x
 ---
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
-  <link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-  <title>Discover credit card validation issue: Magento EE 1.9.1.1&mdash;.13.1.0 and CE 1.4.2.0&mdash;1.8.1.0</title>
-
-</head>
-
-<body>
-<img src="{{ site.baseurl }}/guides/m1x/images/m1xheader.png" width="1024" alt="header" />
-{% include m1x/eol_message.html %}
-
-
-<!-- url: security-add-handler -->
-<!-- title: Resolving a Remote Code Execution Exploit -->
 
 <div class="toc"> <h4>Table of Contents</h4>
   <ul><li><a href="#overview">Overview</a></li>
@@ -115,8 +95,4 @@ SetHandler application/x-httpd-php
     SetHandler php5-script
 &lt;/FilesMatch></pre>
     The regular expression in this setting matches <tt>.php</tt> only to the final extension in the file name, applying the handler only to PHP files and preventing PHP from executing.
-
   </li>
-</ol>
-</body>
-</html>
