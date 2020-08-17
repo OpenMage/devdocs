@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	 background-color: #ffffff;  margin: 0 auto; font-size:15px; font: 15px/22px Helvetica, Arial, sans-serif; color:#5A5A5A; font-weight:normal; width:1024px;
+	 background-color: #ffffff;  margin: 0 auto; font-size:15px; font: 15px/22px 'Poppins' , Arial, sans-serif; color:#5A5A5A; font-weight:normal; width:1024px;
 	}
 
 /* containers */
@@ -44,17 +44,17 @@ h1, h2 { font-weight:100; margin:30px 0 10px 0; }
 
 h3, h4, h5, h6 { font-weight:100; color:#444444; margin:25px 0 2px 0; }
 
-h1 { font: 36px/46px 'TitilliumText22LBold', Helvetica, sans-serif; letter-spacing: 0; }
+h1 { font: 36px/46px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; }
 
-h2 { font: 31px/41px 'TitilliumText22LRegular', Helvetica, sans-serif; color:#f47027; }
+h2 { font: 31px/41px 'Poppins', Helvetica, sans-serif; color:#f47027; }
 
-h3 { font: 27px/37px 'TitilliumText22LRegular', Helvetica, sans-serif; letter-spacing: 0;}
+h3 { font: 27px/37px 'Poppins', Helvetica, sans-serif; letter-spacing: 0;}
 
-h4 { font: 23px/37px 'TitilliumText22LRegular', Helvetica, sans-serif; letter-spacing: 0; }
+h4 { font: 23px/37px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; }
 
-h5 { font: 17px/27px 'TitilliumText22LThin', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
+h5 { font: 17px/27px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
 
-h6 { font: 14px/24px 'TitilliumText22LThin', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
+h6 { font: 14px/24px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
 
 /* TOC */
 div.toc { background: url(blend-toc.png) repeat-x; border-left:1px solid #effbfd; padding:0 10px; margin-bottom:20px; }
@@ -692,4 +692,9 @@ a.image:hover {
 }
 .message-banner p:last-child {
 	margin-bottom: 0;
+}
+
+.site-title h4
+{
+  float:right;
 }
