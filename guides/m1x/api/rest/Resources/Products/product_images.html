@@ -10,28 +10,28 @@ title: Product Images
     <ul>
         <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images'>URI: /products/:product_id/images</a>
         <ul>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-GET'>HTTP Method: GET</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-POST'>HTTP Method: POST</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images-GET'>HTTP Method: GET</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images-POST'>HTTP Method: POST</a></li>
         </ul>
         </li>
         <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images-store--storeid'>URI: /products/:product_id/images/store/:store_id</a>
         <ul>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-GET'>HTTP Method: GET</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-POST'>HTTP Method: POST</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images-store--storeid-GET'>HTTP Method: GET</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images-store--storeid-POST'>HTTP Method: POST</a></li>
         </ul>
         </li>
         <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid'>URI: /products/:product_id/images/:image_id</a>
         <ul>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-GET'>HTTP Method: GET</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-PUT'>HTTP Method: PUT</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-DELETE'>HTTP Method: DELETE</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-GET'>HTTP Method: GET</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-PUT'>HTTP Method: PUT</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-DELETE'>HTTP Method: DELETE</a></li>
         </ul>
         </li>
         <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid'>URI: /products/:product_id/images/:image_id/store/:store_id</a>
         <ul>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-GET'>HTTP Method: GET</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-PUT'>HTTP Method: PUT</a></li>
-            <li><a href='#RESTAPI-Resource-ProductImages-HTTPMethod-DELETE'>HTTP Method: DELETE</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-GET'>HTTP Method: GET</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-PUT'>HTTP Method: PUT</a></li>
+            <li><a href='#RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-DELETE'>HTTP Method: DELETE</a></li>
         </ul>
         </li>
     </ul>
@@ -46,10 +46,10 @@ title: Product Images
 
 <p>Allows you to manage images of the required product.</p>
 
-<p><b>URL Structure</b>: <a href="http://magentohost/api/rest/products/:product_id/images">http://magentohost/api/rest/products/:product_id/images</a><br/>
+<p><b>URL Structure</b>: http://magentohost/api/rest/products/:product_id/images<br/>
 <b>Version</b>: 1</p>
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-GET"></a>HTTP Method: GET</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images-GET"></a>HTTP Method: GET</h5>
 
 <p><b>Description</b>: Allows you to retrieve information about all images of a specified product.<br/>
 <b>Notes</b>: If there are custom attributes with the <b>Catalog Input Type for Store Owner</b> option set to <b>Media Image</b>, these attributes will be also returned in the response as an image type.</p>
@@ -62,12 +62,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>GET <a href="http://magentohost/api/rest/products/8/images">http://magentohost/api/rest/products/8/images</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>GET http://magentohost/api/rest/products/8/images</td></tr></table></div>
 
 <p><b>Response Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;data_item&gt;
@@ -97,7 +97,7 @@ title: Product Images
 </div></div>
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-POST"></a>HTTP Method: POST</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images-POST"></a>HTTP Method: POST</h5>
 
 <p><b>Description</b>: Allows you to add an image for the required product.</p>
 
@@ -143,12 +143,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>POST <a href="http://magentohost/api/rest/products/1/images">http://magentohost/api/rest/products/1/images</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>POST http://magentohost/api/rest/products/1/images</td></tr></table></div>
 
 <p><b>Request Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;file_mime_type&gt;image/jpeg&lt;/file_mime_type&gt;     &lt;file_content&gt;iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNpi/P//P8NgBkwMgxyMOnDUgTDAyMhIDNYF4vNA/B+IDwCxHLoakgEoFxODiQRXQUYi4e3k2gfDjMRajsP3zED8F8pmA+JvUDEYeArEMugOpFcanA/Ef6A0CPwC4uNoag5SnAjJjGI2tKhkg4rLAfFGIH4IxEuBWIjSKKYkDfZCHddLiwChVhokK8YGohwEZYy3aBmEKmDEhOCgreomo+VmZHxsMEQxIc2MAx3FO/DI3RxMmQTZkI9ALDCaSUYdOOrAIeRAPzQ+PxCHUM2FFDb5paGNBPRa5C20bUhxc4sSB4JaLnvxVHWHsbVu6OnACjyOg+HqgXKgGRD/JMKBoD6LDb0dyAPE94hwHAw/hGYcujlwEQmOg+EV9HJgLBmOg+FMWjsQVKR8psCBoDSrQqoDSSmoG6Hpj1wA6ju30LI9+BBX4UsC+Ai0T4BWVd1EIL5PgeO+APECmoXgaGtm1IE0AgABBgAJAICuV8dAUAAAAABJRU5ErkJggg==&lt;/file_content&gt;
@@ -164,10 +164,10 @@ title: Product Images
 
 <p>Allows you to manage product images for a specified store.</p>
 
-<p><b>URL Structure</b>: <a href="http://magentohost/api/rest/products/:product_id/images/store/:store_id">http://magentohost/api/rest/products/:product_id/images/store/:store_id</a><br/>
+<p><b>URL Structure</b>: http://magentohost/api/rest/products/:product_id/images/store/:store_id<br/>
 <b>Version</b>: 1</p>
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-GET"></a>HTTP Method: GET</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images-store--storeid-GET"></a>HTTP Method: GET</h5>
 
 <p><b>Description</b>: Allows you to retrieve information about product images for a specified store view.<br/>
 <b>Notes:</b> Images can have different labels for different stores. For example, image label "flower" in the English store view can be set as "fleur" in the French store view. If there are custom attributes with the <b>Catalog Input Type for Store Owner</b> option set to <b>Media Image</b>, these attributes will be also returned in the response as an image type.</p>
@@ -180,12 +180,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>GET <a href="http://magentohost/api/rest/products/8/images/store/2">http://magentohost/api/rest/products/8/images/store/2</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>GET http://magentohost/api/rest/products/8/images/store/2</td></tr></table></div>
 
 <p><b>Response Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;data_item&gt;
@@ -206,7 +206,7 @@ title: Product Images
 </div></div>
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-POST"></a>HTTP Method: POST</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images-store--storeid-POST"></a>HTTP Method: POST</h5>
 
 <p><b>Description</b>: Allows you to add an image for the required product with image settings for a specific store.<br/>
 <b>Notes</b>: The image is added on the Global level; specified image parameters are set for a specific store.</p>
@@ -252,12 +252,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>POST <a href="http://magentohost/api/rest/products/8/images/store/3">http://magentohost/api/rest/products/8/images/store/3</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>POST http://magentohost/api/rest/products/8/images/store/3</td></tr></table></div>
 
 <p><b>Request Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;file_mime_type&gt;image/jpeg&lt;/file_mime_type&gt;    &lt;file_content&gt;iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNpi/P//P8NgBkwMgxyMOnDUgTDAyMhIDNYF4vNA/B+IDwCxHLoakgEoFxODiQRXQUYi4e3k2gfDjMRajsP3zED8F8pmA+JvUDEYeArEMugOpFcanA/Ef6A0CPwC4uNoag5SnAjJjGI2tKhkg4rLAfFGIH4IxEuBWIjSKKYkDfZCHddLiwChVhokK8YGohwEZYy3aBmEKmDEhOCgreomo+VmZHxsMEQxIc2MAx3FO/DI3RxMmQTZkI9ALDCaSUYdOOrAIeRAPzQ+PxCHUM2FFDb5paGNBPRa5C20bUhxc4sSB4JaLnvxVHWHsbVu6OnACjyOg+HqgXKgGRD/JMKBoD6LDb0dyAPE94hwHAw/hGYcujlwEQmOg+EV9HJgLBmOg+FMWjsQVKR8psCBoDSrQqoDSSmoG6Hpj1wA6ju30LI9+BBX4UsC+Ai0T4BWVd1EIL5PgeO+APECmoXgaGtm1IE0AgABBgAJAICuV8dAUAAAAABJRU5ErkJggg==&lt;/file_content&gt;
@@ -272,11 +272,11 @@ title: Product Images
 
 <p>Allows you to manage a specified product image.</p>
 
-<p><b>URL Structure</b>: <a href="http://magentohost/api/rest/products/:product_id/images/:image_id">http://magentohost/api/rest/products/:product_id/images/:image_id</a><br/>
+<p><b>URL Structure</b>: http://magentohost/api/rest/products/:product_id/images/:image_id<br/>
 <b>Version</b>: 1</p>
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-GET"></a>HTTP Method: GET</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-GET"></a>HTTP Method: GET</h5>
 
 <p><b>Description</b>: Allows you to retrieve information about a specified product image.<br/>
 <b>Notes</b>: If there are custom attributes with the <b>Catalog Input Type for Store Owner</b> option set to <b>Media Image</b>, these attributes will be also returned in the response as an image type.</p>
@@ -289,12 +289,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>GET <a href="http://magentohost/api/rest/products/8/images/7">http://magentohost/api/rest/products/8/images/7</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>GET http://magentohost/api/rest/products/8/images/7</td></tr></table></div>
 
 <p><b>Response Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;id&gt;7&lt;/id&gt;
@@ -311,7 +311,7 @@ title: Product Images
 </div></div>
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-PUT"></a>HTTP Method: PUT</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-PUT"></a>HTTP Method: PUT</h5>
 
 <p><b>Description</b>: Allows you to update information for the specified product image.<br/>
 <b>Notes</b>: When updating information, you need to pass only those parameters that you want to be updated. Parameters that were not passed in the request, will preserve the previous values.</p>
@@ -386,12 +386,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>PUT <a href="http://magentohost/api/rest/products/8/images/7">http://magentohost/api/rest/products/8/images/7</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>PUT http://magentohost/api/rest/products/8/images/7</td></tr></table></div>
 
 <p><b>Request Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;label&gt;English store image&lt;/label&gt;
@@ -413,7 +413,7 @@ title: Product Images
 
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-DELETE"></a>HTTP Method: DELETE</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-DELETE"></a>HTTP Method: DELETE</h5>
 
 <p><b>Description</b>: Allows you to remove the specified image from a product.<br/>
 <b>Notes</b>: The image will not be deleted physically, the image parameters will be set to No Image.</p>
@@ -426,7 +426,7 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>DELETE <a href="http://magentohost/api/rest/products/14/images/6">http://magentohost/api/rest/products/14/images/6</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>DELETE http://magentohost/api/rest/products/14/images/6</td></tr></table></div>
 
 
 
@@ -435,11 +435,11 @@ title: Product Images
 
 <p>Allows you to manage a specified product image for a specified store.</p>
 
-<p><b>URL Structure</b>: <a href="http://magentohost/api/rest/products/:product_id/images/:image_id/store/:store_id">http://magentohost/api/rest/products/:product_id/images/:image_id/store/:store_id</a><br/>
+<p><b>URL Structure</b>: http://magentohost/api/rest/products/:product_id/images/:image_id/store/:store_id<br/>
 <b>Version</b>: 1</p>
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-GET"></a>HTTP Method: GET</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-GET"></a>HTTP Method: GET</h5>
 
 <p><b>Description</b>: Allows you to retrieve information about the specified product image from a specified store.<br/>
 <b>Notes</b>: If there are custom attributes with the <b>Catalog Input Type for Store Owner</b> option set to <b>Media Image</b>, these attributes will be also returned in the response as an image type.</p>
@@ -452,12 +452,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>GET <a href="http://magentohost/api/rest/products/8/images/7/store/3">http://magentohost/api/rest/products/8/images/7/store/3</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>GET http://magentohost/api/rest/products/8/images/7/store/3</td></tr></table></div>
 
 <p><b>Response Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;id&gt;10&lt;/id&gt;
@@ -474,7 +474,7 @@ title: Product Images
 
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-PUT"></a>HTTP Method: PUT</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-PUT"></a>HTTP Method: PUT</h5>
 
 <p><b>Description</b>: Allows you to update the specified product image information for s specified store.<br/>
 <b>Notes</b>: When updating information, you need to pass only those parameters that you want to be updated. Parameters that were not passed in the request will preserve the previous values.</p>
@@ -549,12 +549,12 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>PUT <a href="http://magentohost/api/rest/products/8/images/7/store/3">http://magentohost/api/rest/products/8/images/7/store/3</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>PUT http://magentohost/api/rest/products/8/images/7/store/3</td></tr></table></div>
 
 <p><b>Request Body:</b></p>
 <div class="panel" style="border-width: 1px;"><div class="panelContent">
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<div id="root">
+<div>
 		<pre class="theme: Default; brush: java; gutter: false">&lt;?xml version="1.0"?&gt;
 &lt;magento_api&gt;
   &lt;position&gt;3&lt;/position&gt;
@@ -569,7 +569,7 @@ title: Product Images
 
 
 
-<h5><a name="RESTAPI-Resource-ProductImages-HTTPMethod-DELETE"></a>HTTP Method: DELETE</h5>
+<h5><a name="RESTAPI-Resource-ProductImages-URI--products--productid-images--imageid-store--storeid-DELETE"></a>HTTP Method: DELETE</h5>
 
 <p><b>Description</b>: Allows you to remove an image from the required product in the specified store.<br/>
 <b>Notes</b>: The image will not be deleted physically, the image parameters will be set to No Image for the current store.</p>
@@ -581,7 +581,7 @@ title: Product Images
 
 <p><b>Example:</b></p>
 
-<div class='panelMacro'><table class='infoMacro'><tr><td>DELETE <a href="http://magentohost/api/rest/products/14/images/6/store/3">http://magentohost/api/rest/products/14/images/6/store/3</a></td></tr></table></div>
+<div class='panelMacro'><table class='infoMacro'><tr><td>DELETE http://magentohost/api/rest/products/14/images/6/store/3</td></tr></table></div>
 
 
 
@@ -648,4 +648,4 @@ title: Product Images
 </tbody></table>
 
 
-<?php include(__ROOT__ . 'footer.php'); ?>		    
+		    

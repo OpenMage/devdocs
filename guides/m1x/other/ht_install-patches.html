@@ -1,29 +1,7 @@
 ---
+layout: m1x
+title: How to Apply and Revert Magento Patches
 ---
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css"/>
-	<link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
-	<link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-	<title>How to Apply and Revert Magento Patches</title>
-
-</head>
-
-<body>
-<a name="top"></a>
-<img src="{{ site.baseurl }}/common/images/m1x/m1xheader.png" width="1024" alt="header" />
-{% include m1x/eol_message.html %}
-
-<h1>How to Apply and Revert Magento Patches</h1>
-
-<div id="content">
-
 	<!-- Title: How to Apply and Revert Magento Patches -->
 	<!-- URL: apply-revert-magento-patches -->
 
@@ -43,7 +21,7 @@
 		<li>Magento Enterprise Edition (EE) support portal</li>
 		<li>(Magento partners) from the <a href="https://partners.magento.com" target="_blank">partner portal</a></li></ul>
 	<p>If you don't already have a patch, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a>.</p>
-	<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This article assumes your patch file name ends in <code>.sh</code>. If your patch file name ends in <code>.patch</code> or something else, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a> before proceeding.</div>
+	<div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This article assumes your patch file name ends in <code>.sh</code>. If your patch file name ends in <code>.patch</code> or something else, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a> before proceeding.</div>
 
 	<h2 id="detail">Need More Detail?</h2>
 	<p>For more step-by-step details that are provided here, see one of the following:</p>
@@ -73,8 +51,8 @@
 		(Click <strong>My Account</strong> in the upper right corner of the page.)</li>
 		<li>Click <strong>Downloads</strong> in the left pane.</li>
 		<li>Click <strong>Magento Enterprise Edition</strong> in the right pane.<br />
-			The following figure shows an example.</br>
-			<img src="{{ site.baseurl }}/common/images/m1x/EE-spt-portal.png" height="554px" width="812px"></li>
+			The following figure shows an example.<br />
+			<img src="{{ site.baseurl }}/guides/m1x/images/EE-spt-portal.png" height="554px" width="812px"></li>
 		<li>Click <strong>Support Patches</strong>.</li>
 		<li>Locate the patch to download.</li>
 		<li>Click <strong>Download</strong> corresponding to the patch for the version of EE you're using.</li>
@@ -83,7 +61,7 @@
 	<h2 id="apply">How to Apply a Magento Patch</h2>
 	<p>To apply a Magento patch:</p>
 	<ol><li>Transfer the patch <code>.sh</code> file to your Magento installation root directory.<br />
-		<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This article assumes your patch file name ends in <code>.sh</code>. If your patch file name ends in <code>.patch</code> or something else, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a> before proceeding.</div>
+		<div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This article assumes your patch file name ends in <code>.sh</code>. If your patch file name ends in <code>.patch</code> or something else, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a> before proceeding.</div>
 
 		For example, <code>/var/www/html/magento</code>.</li>
 		<li>Enter the following commands as a user with sufficient privileges to write to Magento files (typically, the web server user or <code>root</code>):
@@ -170,6 +148,3 @@ skin/adminhtml/default/default/media/uploaderSingle.swf</pre>
 		<li>Try running the patch again.<br />
 			If problems persist, <a href="http://support.magentocommerce.com/" target="_blank">contact Magento Support</a>.</li>
 	</ul>
-</div>
-</body>
-</html>

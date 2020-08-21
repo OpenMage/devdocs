@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	 background-color: #ffffff;  margin: 0 auto; font-size:15px; font: 15px/22px Helvetica, Arial, sans-serif; color:#5A5A5A; font-weight:normal; width:1024px;
+	 background-color: #ffffff;  margin: 0 auto; font-size:15px; font: 15px/22px 'Poppins' , Arial, sans-serif; color:#5A5A5A; font-weight:normal; width:1024px;
 	}
 
 /* containers */
@@ -26,7 +26,7 @@ body {
 #content-2 { float:right; width:700px; }
 #left-nav h4 { color:#666666; border-bottom:2px dotted #dddddd; padding:5px; }
 #left-nav li.highlight a:link, #left-nav li.highlight a:visited {
-    color: #F47027;
+    color: #FB0E70;
     text-decoration: none;
 }
 #left-nav ul.related-documents li {
@@ -44,17 +44,17 @@ h1, h2 { font-weight:100; margin:30px 0 10px 0; }
 
 h3, h4, h5, h6 { font-weight:100; color:#444444; margin:25px 0 2px 0; }
 
-h1 { font: 36px/46px 'TitilliumText22LBold', Helvetica, sans-serif; letter-spacing: 0; }
+h1 { font: 36px/46px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; }
 
-h2 { font: 31px/41px 'TitilliumText22LRegular', Helvetica, sans-serif; color:#f47027; }
+h2 { font: 31px/41px 'Poppins', Helvetica, sans-serif; color:#A447A4; }
 
-h3 { font: 27px/37px 'TitilliumText22LRegular', Helvetica, sans-serif; letter-spacing: 0;}
+h3 { font: 27px/37px 'Poppins', Helvetica, sans-serif; letter-spacing: 0;}
 
-h4 { font: 23px/37px 'TitilliumText22LRegular', Helvetica, sans-serif; letter-spacing: 0; }
+h4 { font: 23px/37px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; }
 
-h5 { font: 17px/27px 'TitilliumText22LThin', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
+h5 { font: 17px/27px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
 
-h6 { font: 14px/24px 'TitilliumText22LThin', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
+h6 { font: 14px/24px 'Poppins', Helvetica, sans-serif; letter-spacing: 0; font-weight:bold; margin-top:25px; }
 
 /* TOC */
 div.toc { background: url(blend-toc.png) repeat-x; border-left:1px solid #effbfd; padding:0 10px; margin-bottom:20px; }
@@ -68,9 +68,9 @@ p.toc a.first { padding-left: 0; }
 p { letter-spacing: 0.05px; color:#555555; line-height:20px; margin: 8px 0 17px;}
 
 /* LINKS */
-a:link, a:visited { color:#0090c0; text-decoration:none; }
-a:hover{ color:#ff613d; }
-a:active{ color:#0090c0; }
+a:link, a:visited { color:#A447A4; text-decoration:none; }
+a:hover{ color:#FB0E70; }
+a:active{ color:#FB0E70; }
 
 /* NOTES TIPS ETC. */
 
@@ -100,9 +100,9 @@ a:active{ color:#0090c0; }
 	border-left: 5px solid #f7941d; }
 
 .important {
-    background-color: rgba(229, 122, 63, 0.04);
-	border:1px solid #EE6933;
-	border-left: 5px solid #EE6933; }
+    background-color: rgba(251, 14, 112, 0.04);
+	border:1px solid #FB0E70;
+	border-left: 5px solid #FB0E70; }
 
 .note {
     background-color: rgba(0, 0, 0, 0.025);
@@ -115,7 +115,7 @@ a:active{ color:#0090c0; }
 	border-left: 5px solid #fbe841; }
 
 .msg-box span { position:relative; left:10px; padding-right:5px; }
-.msg-box img { position:relative; top:-3px; left:5px; }
+.msg-box img { position:relative; top:-3px; left:5px; width:30px }
 
 
 pre { font-size:14px; line-height:20px; overflow: auto; }
@@ -606,7 +606,7 @@ a.image:hover {
 }
 .soap-api-menu ul li a:hover,
 .soap-api-menu ul li a.active {
-    color: #f47027;
+    color: #FB0E70;
 }
 .soap-api-content {
     float: right;
@@ -636,7 +636,7 @@ a.image:hover {
     left: 3px;
     content: '';
     border: 7px outset transparent;
-    border-top: 7px solid #ed6739;
+    border-top: 7px solid #FB0E70;
 }
 .soap-api-menu li.parent > .arr:after {
     position: absolute;
@@ -650,7 +650,7 @@ a.image:hover {
 }
 .soap-api-menu li.parent.open > .arr:before {
     border: 7px outset transparent;
-    border-bottom: 7px solid #ed6739;
+    border-bottom: 7px solid #FB0E70;
     top: -3px;
 }
 .soap-api-menu li.parent.open > .arr:after {
@@ -663,7 +663,7 @@ a.image:hover {
     font-weight: bold;
 }
 .introduction-menu {
-    background: #f7f3eb;
+    background: #fdf2fd;
     margin-left: 0;
     padding: 20px;
     list-style: none;
@@ -673,10 +673,10 @@ a.image:hover {
     padding: 0;
 }
 .introduction-menu a {
-    color: #c14800
+    color: #A447A4
 }
 .introduction-menu a:hover {
-    color: #ef672f;
+    color: #FB0E70
 }
 
 .message-banner {
@@ -692,4 +692,9 @@ a.image:hover {
 }
 .message-banner p:last-child {
 	margin-bottom: 0;
+}
+
+.site-title h4
+{
+  float:right;
 }
