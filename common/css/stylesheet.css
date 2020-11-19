@@ -7,7 +7,7 @@ body {
 
 /* containers */
 #container { width:940px; margin:0; }
-#content { width:940px; margin:15px 45px 0 45px; }
+#content { width:100%; margin:15px 45px 0 45px; }
 
 /* left nav style */
 .show {
