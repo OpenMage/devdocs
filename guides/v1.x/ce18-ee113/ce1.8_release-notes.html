@@ -17,8 +17,8 @@
 <body>
   
 
-  <img src="{{ site.baseurl }}/guides/m1x/images/m1xheader.png" width="1024" alt="header" />
-  {% include m1x/eol_message.html %}
+  <img src="{{ site.baseurl }}/guides/v1.x/images/v1xheader.png" width="1024" alt="header" />
+  {% include v1x/eol_message.html %}
 
   <!-- Title: Magento Community Edition (CE) Release Notes (version 1.8 and later) -->
   <!-- URL: ece-18-later-release-notes -->
@@ -27,7 +27,7 @@
   <h1>Magento Community Edition (CE) Release Notes (1.8 and later)</h1>
 
 
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note" align="left"
+  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note" align="left"
       width="40"><span><strong>Note</strong>: We'd like to make you aware that a security patch for older versions of <a
         href="http://www.magentocommerce.com/download" target="_blank">Magento Community Edition</a> has been posted (in
       the Magento Community Edition Patches section). This patch resolves a remote code execution vulnerability that
@@ -62,7 +62,7 @@
     <li><a href="#ce18-patches-how-to-get">How to get Patches for Magento CE</a></li>
   </ul>
 
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note" align="left"
+  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note" align="left"
       width="40"><span><strong>Note</strong>: Some of the patches discussed in this section have
       <code>EE_1.14.0.1</code> in the name. These patches were all tested against CE 1.8.x as well.</div>
 
@@ -88,7 +88,7 @@
       <em>your Magento install dir</em><code>/app/code/community</code> directory structure, the Magento administrator
       sees an error message in the Magento Connect Manager.<br />
       To set file system permissions appropriately, see <a
-        href="{{ site.m1xgdeurl }}/install/installer-privileges_after.html#extensions" target="_blank">After You Install
+        href="{{ site.v1xgdeurl }}/install/installer-privileges_after.html#extensions" target="_blank">After You Install
         Magento: Recommended File System Ownership and Privileges</a>.</li>
   </ul>
 
@@ -113,10 +113,10 @@
     certain Discover credit card number ranges were not recognized as being valid. As a result of the fix, all Discover
     cards should validate properly.</p>
     <p>The issue affects Magento CE versions 1.4.2.0&ndash;1.8.1.0.</p>
-    <p>To get a fix for the issue, see <a href="{{ site.m1xgdeurl }}/other/discover-card-validation.html"
+    <p>To get a fix for the issue, see <a href="{{ site.v1xgdeurl }}/other/discover-card-validation.html"
         target="_blank">Discover credit card validation issue: Magento EE 1.9.1.1&ndash;1.13.1.0 and CE
         1.4.2.0&ndash;1.8.1.0</a>.</p>
-    <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-important.png" alt="important"
+    <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-important.png" alt="important"
         align="left" width="40"><span><strong>Important</strong>: This is <em>not</em> a security threat. No data has
         been compromised or misused. It affects only the ability to validate certain credit card number ranges as valid
         Discover card numbers.</span></div>
@@ -124,7 +124,7 @@
 
     <h3 id="php54">PHP 5.4 Patch Available</h3>
     <p>You can use PHP 5.4 with Magento CE versions 1.6.0.0&ndash;1.8.1.0.</p>
-    <p>To get the patch, see <a href="{{ site.m1xgdeurl }}/other/php5.4_patch.html" target="_blank">Getting the PHP 5.4
+    <p>To get the patch, see <a href="{{ site.v1xgdeurl }}/other/php5.4_patch.html" target="_blank">Getting the PHP 5.4
         patch for Magento Enterprise Edition (EE) and Community Edition (CE)</a>.</p>
     <p>For more information about PHP 5.4, see <a href="http://www.php.net/manual/en/migration54.changes.php"
         target="_blank">the PHP migration page</a> and <a href="http://php.net/ChangeLog-5.php#5.4.0"
@@ -139,7 +139,7 @@
       <li>In the left pane, click <strong>Downloads</strong>.</li>
       <li>Scroll down to the Magento Community Edition Patches section.</li>
       <li>Follow the prompts on your screen to download a patch for your version of CE.</li>
-      <li>Apply the patch as discussed in <a href="{{ site.m1xgdeurl }}/other/ht_install-patches.html"
+      <li>Apply the patch as discussed in <a href="{{ site.v1xgdeurl }}/other/ht_install-patches.html"
           target="_blank">How to Apply and Revert Magento Patches</a>.</li>
     </ol>
 
@@ -214,7 +214,7 @@ Magento thanks iSEC Security Consultants for contributing to this fix. For more 
         <!-- <br />
 Magento thanks iSEC Security Consultants for contributing to this fix. -->
       </li>
-      <!--<li> (<a href="https://jira.corp.x.com/browse/MPERF-2120" target="_blank">MPERF-2120</a>)  Resolved a <a href="{{ site.m1xgdeurl }}/ce18-ee113/ce1.8_release-notes.html#ce18-1800security-advisory" target="_blank">cross-site scripting (XSS) issue reported in CE 1.8.0.0</a>.<br />
+      <!--<li> (<a href="https://jira.corp.x.com/browse/MPERF-2120" target="_blank">MPERF-2120</a>)  Resolved a <a href="{{ site.v1xgdeurl }}/ce18-ee113/ce1.8_release-notes.html#ce18-1800security-advisory" target="_blank">cross-site scripting (XSS) issue reported in CE 1.8.0.0</a>.<br />
 Magento thanks Myke Hines, Fox, and Opteros for contributing to this fix.</li> -->
       <li>
         <!-- (<a href="https://jira.corp.x.com/browse/MPERF-2123" target="_blank">MPERF-2123</a>)  -->Resolved issues
@@ -247,7 +247,7 @@ Magento thanks Binary Anvil for contributing to this fix. -->
     <p>
       <!-- https://jira.corp.x.com/browse/APPSEC-212 -->There is a known Issue After Upgrading to CE 1.8.1 that affects
       you <em>only</em> if you do <em>not</em> follow the recommended procedure to upgrade to a new environment as
-      discussed in <a href="{{ site.m1xgdeurl }}/install/installing_upgrade_details.html#prereq-tasks">Getting Ready For
+      discussed in <a href="{{ site.v1xgdeurl }}/install/installing_upgrade_details.html#prereq-tasks">Getting Ready For
         Your Upgrade</a>.</p>
     <p><strong>Symptom</strong>: After completing the upgrade, when you log in to the Admin Panel and click
       <strong>System</strong> > <strong>Configuration</strong>, a fatal error similar to the following displays in your
@@ -262,7 +262,7 @@ Magento thanks Binary Anvil for contributing to this fix. -->
         <pre><em>magento-install-dir</em>/app/code/core/Mage/GoogleCheckout/etc</pre>
       </li>
       <li>When you log back in to the Admin Panel, everything works as expected.<br />
-        If you're still encountering errors, see <a href="{{ site.m1xgdeurl }}/install/installing.html#help"
+        If you're still encountering errors, see <a href="{{ site.v1xgdeurl }}/install/installing.html#help"
           target="_blank">Getting Help With Your Installation or Upgrade</a>.</li>
     </ol>
 
@@ -724,7 +724,7 @@ Magento thanks TBD for contributing to this fix. Link to the <a href="https://gi
     <li>
       <!-- (<a href="https://jira.corp.x.com/browse/MPERF-1972" target="_blank">MPERF-1972</a>)  -->Upgraded Redis cache
       adapters for multi-server systems.<br />
-      To set up and use Redis with Magento, see <a href="{{ site.m1xgdeurl }}/ce18-ee113/using_redis.html"
+      To set up and use Redis with Magento, see <a href="{{ site.v1xgdeurl }}/ce18-ee113/using_redis.html"
         target="_blank">Using Redis with Magento Community Edition (CE) and Enterprise Edition (EE)</a>.</li>
     <li>Eliminated many types of database deadlocks.</li>
   </ul>
@@ -765,7 +765,7 @@ Magento thanks TBD for contributing to this fix. Link to the <a href="https://gi
   <p>The USPS changed the names of their Priority and Express shipping options in their API in July 2013. To enable you
     to continue utilizing USPS Priority <em>and</em> Express mail methods, CE 1.8 includes a patch that addresses the
     issue.</p>
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-important.png" alt="important"
+  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-important.png" alt="important"
       align="left" width="40"><span><strong>Important</strong>: The USPS API patch has an impact on upgrading to CE 1.8
       from earlier versions. If you're doing a new CE 1.8 installation, however, you don't need to do anything.</span>
   </div>
@@ -1349,7 +1349,7 @@ Magento thanks TBD for contributing to this fix. Link to the <a href="https://gi
     <li>
       <!-- (<a href="https://jira.corp.x.com/browse/MAGE-7339" target="_blank">MAGE-7339</a>)  -->The
       <code>.htaccess.sample</code> provided with Magento now includes <code>php_value memory_limit 512M</code> to be
-      consistent with the <a href="{{ site.m1xgdeurl }}/system-requirements.html" target="_blank">Magento system
+      consistent with the <a href="{{ site.v1xgdeurl }}/system-requirements.html" target="_blank">Magento system
         requirements</a>.</li>
     <li>
       <!-- (<a href="https://jira.corp.x.com/browse/MPERF-2575" target="_blank">MPERF-2575</a>)  -->You can now install
