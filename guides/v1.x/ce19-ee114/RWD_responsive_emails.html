@@ -21,14 +21,14 @@
 <body>
     
 
-    <img src="{{ site.baseurl }}/guides/m1x/images/m1xheader.png" width="1024" alt="header" />
-    {% include m1x/eol_message.html %}
+    <img src="{{ site.baseurl }}/guides/v1.x/images/v1xheader.png" width="1024" alt="header" />
+    {% include v1x/eol_message.html %}
 
     <div id="content">
 
         <h1>Responsive Email Developer's Guide for Magento EE 1.14.1 and Magento CE 1.9.1</h1>
         <p><em>by Erik Hansen</em></p>
-        <p><a href="{{ site.m1xgithuburl }}/ce19-ee114/RWD_responsive_emails.html" target="_blank">Edit this page on
+        <p><a href="{{ site.v1xgithuburl }}/ce19-ee114/RWD_responsive_emails.html" target="_blank">Edit this page on
                 GitHub <img src="{{ site.baseurl }}/common/images/github_icon.png" height="15px"></a></p>
 
         <div class="toc">
@@ -57,7 +57,7 @@
             <li>CSS is now contained in separate CSS files</li>
             <li>We provide you with a responsive sample newsletter template</li>
         </ul>
-        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note"
+        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note"
                 align="left" width="40"><span><strong>Note</strong>: This article focuses on responsive emails but the
                 same techniques can be used for newsletter templates as well. For more information about newsletter
                 templates, see <a href="#newsletter-template">Using Updated Newsletter Templates</a>.</div>
@@ -66,7 +66,7 @@
         <h2 id="cron">Using cron to Send Emails</h2>
         <p>Starting in Magento EE 1.14.1 and CE 1.9.1, your Magento cron job sends <em>all</em> emails, including
             transactional emails. You must configure cron for emails to work.</p>
-        <p>For more information, see <a href="{{ site.m1xgdeurl }}/install/installing_install.html#install-cron"
+        <p>For more information, see <a href="{{ site.v1xgdeurl }}/install/installing_install.html#install-cron"
                 target="_blank">Setting Up Cron Jobs</a>.</p>
 
         <h2 id="supported">Supported Email Clients and Devices</h2>
@@ -262,7 +262,7 @@
             <li><code>[your Magento install dir]/app/locale/en_US/template/email/html/header.html</code></li>
             <li><code>[your Magento install dir]/app/locale/en_US/template/email/html/footer.html</code></li>
         </ul>
-        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note"
+        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note"
                 align="left" width="40"><span><strong>Note</strong>: To make changes to the templates at the website or
                 store view configuration scopes, see the next section.</div>
 
@@ -324,7 +324,7 @@
                     </tbody>
                 </table><br>
                 The following figure shows an example:<br>
-                <img src="{{ site.baseurl }}/guides/m1x/images/resp_email_header-template.png" width="600px"
+                <img src="{{ site.baseurl }}/guides/v1.x/images/resp_email_header-template.png" width="600px"
                     height="502px"></li>
             <li>Click <strong>Preview Template</strong> to look at the HTML code in a separate browser tab page or
                 window, or click <strong>Save Template</strong> to save it.</li>
@@ -342,11 +342,11 @@
                 all websites and store views. You can optionally associate it with a specific website or store view by
                 selecting it from the list.<br>
                 The following example shows how to associate a template with the Madison Island English store view.<br>
-                <img src="{{ site.baseurl }}/guides/m1x/images/resp_email_template_scope.png"></li>
+                <img src="{{ site.baseurl }}/guides/v1.x/images/resp_email_template_scope.png"></li>
             <li>In the right pane, click <strong>Transactional Emails</strong> to expand it.</li>
             <li>From the <strong>Email Header Template</strong> list, click the header template you created earlier.<br>
                 The following figure shows an example:<br>
-                <img src="{{ site.baseurl }}/guides/m1x/images/resp_email_using-header.png" width="600px"
+                <img src="{{ site.baseurl }}/guides/v1.x/images/resp_email_using-header.png" width="600px"
                     height="542px"></li>
             <li>Click <strong>Save Config</strong> in the upper right corner of the page.</li>
         </ol>
@@ -367,7 +367,7 @@
         </ul>
         <p>As you might expect, these two files compile to <code>skin/frontend/rwd/default/css/email-inline.css</code>
             and <code>skin/frontend/rwd/default/css/email-non-inline.css</code>, respectively. If you're not familiar
-            with how to work with Sass files, refer to the <a href="{{ site.m1xgdeurl }}/ce19-ee114/RWD_dev-guide.html"
+            with how to work with Sass files, refer to the <a href="{{ site.v1xgdeurl }}/ce19-ee114/RWD_dev-guide.html"
                 target="_blank">RWD theme documentation</a>.</p>
 
         <h3 id="email-css-inline">Using Inline Styles to Customize Email CSS</h3>
@@ -385,7 +385,7 @@
             <code>skin/frontend/custompackage/customtheme/css/email-inline.css</code>)</p>
         <p>Refer to the <a href="https://github.com/jjriv/emogrifier#emogrifier" target="_blank">Emogrifier README</a>
             to see what CSS selectors are supported.</p>
-        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note"
+        <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note"
                 align="left" width="40"><span><strong>Note</strong>: The <code>&#123;&#123;inlinecss file=""}}</code>
                 directive can be used a single time and cannot be used in templates that get included by other templates
                 (for example, <code>app/locale/en_US/template/email/html/header.html</code> and
@@ -419,7 +419,7 @@
             <p>After the CSS is loaded, it's wrapped in a <code>&lt;style
                     type=&quot;text/css&quot;&gt;&lt;/style&gt;</code> tag and is assigned to the
                 <code>non_inline_styles</code> variable.</p>
-            <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note"
+            <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note"
                     align="left" width="40"><span><strong>Note</strong>: When you are writing "non-inline" CSS, you must
                     add the <code>!important</code> declaration after each property so the style has a high enough
                     specificity to get applied. This is the best way to get your custom styles to override styles
@@ -479,7 +479,7 @@
     border="0"/></pre>
                 </li>
             </ol>
-            <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-note.png" alt="note"
+            <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note"
                     align="left" width="40"><span><strong>Note</strong>: To use a file type other than GIF or if you
                     need to upload unique logos for different websites, stores, or store views, see the next section.
             </div>
@@ -503,7 +503,7 @@
                     all websites and store views. You can optionally associate it with a specific website or store view
                     by selecting it from the list.<br>
                     The following example shows how to associate a logo with the Madison Island English store view.<br>
-                    <img src="{{ site.baseurl }}/guides/m1x/images/resp_email_template_scope.png"></li>
+                    <img src="{{ site.baseurl }}/guides/v1.x/images/resp_email_template_scope.png"></li>
                 <li>In the right pane, click <strong>Transactional Emails</strong> to expand it.</li>
                 <li>Enter the following information:
                     <table>
@@ -538,7 +538,7 @@
                         </tbody>
                     </table><br>
                     The following figure shows an example.<br>
-                    <img src="{{ site.baseurl }}/guides/m1x/images/resp_email_logo.png" width="600px" height="509px">
+                    <img src="{{ site.baseurl }}/guides/v1.x/images/resp_email_logo.png" width="600px" height="509px">
                 </li>
                 <li>Click <strong>Save Config</strong> in the upper right corner of the page.</li>
             </ol>

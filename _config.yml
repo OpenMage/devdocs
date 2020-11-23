@@ -33,7 +33,7 @@ defaults:
       feedback_link: true
   -
     scope:
-      path: guides/m1x
+      path: guides/v1.x
     values:
       layout: null
 
@@ -94,8 +94,8 @@ algolia:
   index_name: devdocs
   api_key: d2d0f33ab73e291ef8d88d8b565e754c
   files_to_exclude:
-    - guides/m1x/**/*.html
-    - guides/m1x/**/*.md
+    - guides/v1.x/**/*.html
+    - guides/v1.x/**/*.md
     - swagger
     - redoc
 
@@ -111,8 +111,8 @@ check_links: true
 #############
 #
 # 1.x variables
-m1xgdeurl: /guides/m1x/
-m1xgithuburl: https://github.com/OpenMage/devdocs/blob/master/
+v1xgdeurl: /guides/v1.x/
+v1xgithuburl: https://github.com/OpenMage/devdocs/tree/master
 
 ##########
 # Ignore #
