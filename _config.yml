@@ -36,7 +36,11 @@ defaults:
       path: guides/v1.x
     values:
       layout: null
-
+  -
+    scope:
+      path: guides/v1.9
+    values:
+      layout: null
   -
     scope:
       path: mftf/2.2

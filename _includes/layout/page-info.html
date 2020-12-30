@@ -29,4 +29,16 @@
 
   {% endif %}
 
+{% if page.side_toc %} 
+ <ul>
+	{% for toc_hash in site.data.frontend-guide.theme %}
+	{% assign toc = toc_hash[page.side_toc]%}
+	<li><a href='#{{ toc.link }}'>
+		{{ toc.name }}
+	</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endif %}
+
 </div>
