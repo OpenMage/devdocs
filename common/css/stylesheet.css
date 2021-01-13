@@ -582,6 +582,12 @@ a.image:hover {
     padding-bottom: 10px;
     margin-top: 20px;
 }
+.soap-api-menu-header{    
+	text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-top: 12px;
+}
 .soap-api-menu > ul {
     margin-left: 0;
 }
@@ -698,3 +704,13 @@ a.image:hover {
 {
   float:right;
 }
+
+.site-reference
+{
+	height:10%;
+	width:100%;
+	background: #fb0e70;
+	color: white;
+	padding: 5% 0;
+}
+
