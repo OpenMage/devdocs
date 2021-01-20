@@ -6,25 +6,21 @@
       url: /install/installing.html
 
     - label: Extension Update and System Upgrade Guide
-      url: /comp-mgr/bk-compman-upgrade-guide.html
+      url: 
       exclude_versions: ['2.0', '2.1']
 
     - label: Component Manager and System Upgrade Guide
-      url: /comp-mgr/bk-compman-upgrade-guide.html
+      url: 
       include_versions: ['2.0', '2.1']
 
     - label: Configuration Guide
-      url: /config-guide/bk-config-guide.html
-
+      url: 
     - label: Performance Best Practices
-      url: /performance-best-practices/introduction.html
+      url: 
       exclude_versions: ['2.0','2.1']
 
     - label: Migration Guide
-      url: /migration/bk-migration-guide.html
-
-    - label: Magento Commerce (Cloud) Guide
-      url: /cloud/bk-cloud.html
+      url: 
 
     - label: Release Information
       url: /release-notes/bk-release-notes.html
@@ -39,10 +35,10 @@
           url: 
 
         - label: PHP Developer Guide
-          url: /
+          url: 
 
         - label: Extension Developer Best Practices
-          url: '#placeholder'
+          url: 
 
         - label: Module Reference Guide
           url: 
@@ -57,11 +53,7 @@
       children:
 
         - label: Frontend Developer Guide
-          url: /frontend-dev-guide/bk-frontend-dev-guide.html
-
-        - label: Magento PWA Documentation Site
-          url: https://magento-research.github.io/pwa-studio/
-          include_versions: ['2.3']
+          url: 
 
     - label: API
       children:
@@ -82,11 +74,11 @@
   children:
 
     - label: Advanced Reporting
-      url: /advanced-reporting/overview.html
+      url: 
       exclude_versions: ['2.0','2.1']
 
     - label: Checkout
-      url: /howdoi/checkout/checkout_overview.html
+      url: 
 
     - label: Inventory Management
       url: /inventory/index.html
@@ -96,10 +88,10 @@
       url: http://omsdocs.magento.com/en/
 
     - label: Payment Integrations
-      url: /payments-integrations/bk-payments-integrations.html
+      url: 
 
     - label: Staging
-      url: /extension-dev-guide/staging.html
+      url: 
       exclude_versions: ['2.0']
 
 - label: Tutorials
