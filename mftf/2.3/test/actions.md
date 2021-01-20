@@ -641,7 +641,7 @@ Delete the entity that was previously created using [`createData`](#createdata) 
 
 #### Example of existing data deletion
 
-Delete an entity using [REST API]({{ site.gdeurl23 }}rest/bk-rest.html) request to the corresponding route:
+Delete an entity using [REST API]({{ site.gdeurl23 }}) request to the corresponding route:
 
 ```xml
 <grabFromCurrentUrl regex="/^.+id\/([\d]+)/" stepKey="grabId"/>

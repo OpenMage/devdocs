@@ -1,5 +1,5 @@
 ---
-group: php-developer-guide
+#group: php-developer-guide
 title: PHP Developer Guide
 layout: default
 ---

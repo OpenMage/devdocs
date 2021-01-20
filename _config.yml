@@ -33,16 +33,12 @@ defaults:
       feedback_link: true
   -
     scope:
-<<<<<<< HEAD
       path: guides/v1.9.x
     values:
       layout: null
   -
     scope:
       path: guides/v1.8
-=======
-      path: guides/v1.x
->>>>>>> B3 IT: Updating nameing  to match current standards
     values:
       layout: null
   -
@@ -102,13 +98,8 @@ algolia:
   index_name: devdocs
   api_key: d2d0f33ab73e291ef8d88d8b565e754c
   files_to_exclude:
-<<<<<<< HEAD
     - guides/v1.9.x/**/*.html
     - guides/v1.9.x/**/*.md
-=======
-    - guides/v1.x/**/*.html
-    - guides/v1.x/**/*.md
->>>>>>> B3 IT: Updating nameing  to match current standards
     - swagger
     - redoc
 
@@ -124,12 +115,12 @@ check_links: true
 #############
 #
 # 1.x variables
-<<<<<<< HEAD
+
 v1xgdeurl: /guides/v1.9.x/
-=======
-v1xgdeurl: /guides/v1.x/
->>>>>>> B3 IT: Updating nameing  to match current standards
 v1xgithuburl: https://github.com/OpenMage/devdocs/tree/master
+v18xgdeurl: /guides/v1.8/
+
+gdeurl23: https://devdocs.magento.com/redoc/2.3/
 
 ##########
 # Ignore #
@@ -153,3 +144,4 @@ exclude:
   - rakelib
   - README.md
   - _plugins
+

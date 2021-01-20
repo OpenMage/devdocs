@@ -17,7 +17,7 @@
 <body>
   
 
-  <img src="{{ site.baseurl }}/guides/v1.x/images/v1xheader.png" width="1024" alt="header" />
+  <img src="{{ site.baseurl }}{{ site.v18xgdeurl }}images/v1xheader.png" width="1024" alt="header" />
   {% include v1x/eol_message.html %}
 
   <!-- Title: Magento Community Edition (CE) Release Notes (version 1.8 and later) -->
@@ -27,7 +27,7 @@
   <h1>Magento Community Edition (CE) Release Notes (1.8 and later)</h1>
 
 
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note" align="left"
+  <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v18xgdeurl }}images/icon-note.png" alt="note" align="left"
       width="40"><span><strong>Note</strong>: We'd like to make you aware that a security patch for older versions of <a
         href="http://www.magentocommerce.com/download" target="_blank">Magento Community Edition</a> has been posted (in
       the Magento Community Edition Patches section). This patch resolves a remote code execution vulnerability that
@@ -62,7 +62,7 @@
     <li><a href="#ce18-patches-how-to-get">How to get Patches for Magento CE</a></li>
   </ul>
 
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-note.png" alt="note" align="left"
+  <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v18xgdeurl }}images/icon-note.png" alt="note" align="left"
       width="40"><span><strong>Note</strong>: Some of the patches discussed in this section have
       <code>EE_1.14.0.1</code> in the name. These patches were all tested against CE 1.8.x as well.</div>
 
@@ -116,7 +116,7 @@
     <p>To get a fix for the issue, see <a href="{{ site.v1xgdeurl }}/other/discover-card-validation.html"
         target="_blank">Discover credit card validation issue: Magento EE 1.9.1.1&ndash;1.13.1.0 and CE
         1.4.2.0&ndash;1.8.1.0</a>.</p>
-    <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-important.png" alt="important"
+    <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v18xgdeurl }}images/icon-important.png" alt="important"
         align="left" width="40"><span><strong>Important</strong>: This is <em>not</em> a security threat. No data has
         been compromised or misused. It affects only the ability to validate certain credit card number ranges as valid
         Discover card numbers.</span></div>
@@ -765,7 +765,7 @@ Magento thanks TBD for contributing to this fix. Link to the <a href="https://gi
   <p>The USPS changed the names of their Priority and Express shipping options in their API in July 2013. To enable you
     to continue utilizing USPS Priority <em>and</em> Express mail methods, CE 1.8 includes a patch that addresses the
     issue.</p>
-  <div class="msg-box important"><img src="{{ site.baseurl }}/guides/v1.x/images/icon-important.png" alt="important"
+  <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v18xgdeurl }}images/icon-important.png" alt="important"
       align="left" width="40"><span><strong>Important</strong>: The USPS API patch has an impact on upgrading to CE 1.8
       from earlier versions. If you're doing a new CE 1.8 installation, however, you don't need to do anything.</span>
   </div>
