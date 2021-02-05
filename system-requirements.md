@@ -5,40 +5,35 @@ group: system-requirements
 System Requirements
 ===============================
 
-System Requirements for Magento 1
+System Requirements for OpenMage LTS (Magento 1 Fork)
 ----------------------------------
 ### Operating System
 Linux x86-64
+
 ### Web Server
 * Apache 2.x
-* Nginx 1.7.x
+* Nginx 1.8.x
 
 ### Database
-Magento EE 1.14.3 and later:
-* MySQL 5.7 (Oracle or Percona)
-Earlier Magento versions:
-* MySQL 5.4.x or newer
+OpenMage LTS 1.9.x and later:
+* MySQL 5.7 (Oracle, Percona, MariaDB)
 
 ### PHP
-Magento EE 1.14.4 and later:
-* PHP 7.2
 
-Magento CE 1.9.x:  PHP 5.6
-Magento EE 1.14.2: PHP 5.4
-Magento EE 1.14.3.x: PHP 5.5
+OpenMage LTS 1.9.x
+* PHP 7.0+ (PHP 7.3 and OpenSSL extension strongly recommended)
 
-Earlier Magento versions:
-* PHP 5.4
+* If using php 7.2+ then mcrypt needs to be disabled in php.ini or pecl to fallback on mcryptcompat and phpseclib. mcrypt is deprecated from 7.2+ onwards.
 
 ### SSL
 * Magento is SSL ready and for HTTPS it just needs a valid security certificate 
 * Self-signed SSL certificates are not supported
+* OpenSSl recommended
 
-Other
+### Other
 --------------------------------------
-To find individual system requirements for the Magento 2.0.x, 2.1.x, 2.2.x, and 2.3.x releases, see the following pages:
+To find individual system requirements for the Magento 2.3.x, and 2.4.x releases, see the following pages:
 
-* [Magento 2.3.x system requirements](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements2.html)
-* [Magento 2.2.x system requirements](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements2.html)
-*	[Magento 2.1.x system requirements](https://devdocs.magento.com/guides/v2.1/install-gde/system-requirements2.html)
-*	[Magento 2.0.x system requirements](https://devdocs.magento.com/guides/v2.0/install-gde/system-requirements2.html)
+* [Magento 2.4.x system requirements](https://devdocs.magento.com/guides/v2.4/install/system-requirements.html)
+* [Magento 2.3.x system requirements](https://devdocs.magento.com/guides/v2.3/install/system-requirements.html)
+

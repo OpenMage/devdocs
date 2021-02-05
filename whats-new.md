@@ -1,4 +1,5 @@
 ---
+layout: full-width
 ---
 # What's new on DevDocs
 
