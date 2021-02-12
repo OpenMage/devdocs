@@ -1,53 +1,39 @@
 ---
-layout: v1x
-title: System Requirements for Magento Enterprise Edition and Community Edition (Current Shipping Versions)
+layout: full-width
+group: system-requirements
 ---
+System Requirements
+===============================
 
-Magento requires a LAMP or LNMP stack.
-
-#### Operating System
-
+System Requirements for OpenMage LTS (Magento 1 Fork)
+----------------------------------
+### Operating System
 Linux x86-64
 
-#### Web Server
+### Web Server
+* Apache 2.x
+* Nginx 1.8.x
 
-*   Apache 2.x
-*   Nginx 1.7.x
+### Database
+OpenMage LTS 1.9.x and later:
+* MySQL 5.7 (Oracle, Percona, MariaDB)
 
-#### Database
+### PHP
 
-*	Magento EE 1.14.3 and later:
-	*	MySQL 5.7 (Oracle or Percona)
-*	Earlier Magento versions:
-	*	MySQL 5.6 (Oracle or Percona)
+OpenMage LTS 1.9.x
+* PHP 7.0+ (PHP 7.3 and OpenSSL extension strongly recommended)
 
-#### PHP
+* If using php 7.2+ then mcrypt needs to be disabled in php.ini or pecl to fallback on mcryptcompat and phpseclib. mcrypt is deprecated from 7.2+ onwards.
 
-*	Magento EE 1.14.4.0 and later:
-	*	PHP 7.2.x
-*	Magento CE 1.9.2 and later, Magento EE 1.14.2 - EE 1.14.3.10:
-	*	PHP 5.6.x
-	*   PHP 5.4.x
-	*   PHP 5.5.x
-*	Earlier Magento versions:
-	*   PHP 5.4.x
-	*   PHP 5.5.x
+### SSL
+* Magento is SSL ready and for HTTPS it just needs a valid security certificate 
+* Self-signed SSL certificates are not supported
+* OpenSSl recommended
 
-#### SSL
+### Other
+--------------------------------------
+To find individual system requirements for the Magento 2.3.x, and 2.4.x releases, see the following pages:
 
-*   A valid security certificate is required for HTTPS.
-*   Self-signed SSL certificates are not supported.
+* [Magento 2.4.x system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+* [Magento 2.3.x system requirements](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html)
 
-#### Magento can utilize the following technologies:
-
-*   [Redis]({{ site.baseurl }}/guides/v1.8/ce18-ee113/using_redis.html)
-    
-	Redis can be used for session or cache storage
-
-*   [Memcached]({{ site.baseurl }}/index.html)
-    
-    memcached can be used for session or cache storage
- 
-*   Apache Solr
-
-    [Solr search](http://merch.docs.magento.com/ee/user_guide/search_seo/search-configuration-solr.html) can be used as a search provider for Magento Enterprise Edition (EE) only

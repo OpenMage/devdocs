@@ -19,7 +19,7 @@ Before you install Magento, you must do all of the following:
 {:.bs-callout-info}
 We assume you're installing the OpenMage Magento  software in a **development environment**, which means you have [root user](http://www.linfo.org/root.html) access to the machine **and** that the machine does not need to be highly secure. If you're setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
 
-We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Don't know what any of this means? Check out our [installation overview page]({{page.v1xgdeurl}}/install-g/bk-install-guide.html).
+We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems.
 
 Enter the following commands as a user with `root` privileges:
 

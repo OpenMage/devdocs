@@ -4,7 +4,7 @@ The diagram shows the following:
 
 1.	Set up your server environment.
 
-	Install the prerequisite software, including PHP, Apache, and MySQL. Consult the [system requirements]({{ site.gdeurl }}/system-requirements.html) for specific information:
+	Install the prerequisite software, including PHP, Apache, and MySQL. Consult the [system requirements]({{ site.v1xgdeurl }}/system-requirements.html) for specific information:
 
 2.	Get the Magento LTS software.
 
@@ -24,6 +24,6 @@ The diagram shows the following:
 
 	At each step, the Web Setup Wizard validates the information you entered. As shown in the preceding diagram, if validation fails, you must manually fix the issues before you proceed.
 
-	If the step fails because prerequisite software isn't set up correctly, review our [Prerequisites](/install-gde/prereq/prereq-overview.html).
+	If the step fails because prerequisite software isn't set up correctly, review our [Prerequisites]({{ site.v1xgdeurl}}/install-gde/prereq/prereq-overview.html).
 
 4.	Verify the installation by viewing your storefront and the Magento Admin.

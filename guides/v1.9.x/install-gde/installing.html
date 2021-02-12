@@ -1,53 +1,27 @@
 ---
 guide_version: '1.9.x'
+layout: default
+group: installation-guide
 ---
 
-<!DOCTYPE html>
-<html lang=en>
-
-<head>
-  <meta charset=utf-8>
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
-  <link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-  <title>Installing and Upgrading to Magento Community Edition (CE) and Magento Enterprise Edition (EE)</title>
-
-</head>
 
 <body>
-
-
-<img src="{{ site.baseurl }}{{ site.v1xgdeurl }}images/v1xheader.png" width="1024" alt="header" />
 {% include v1x/eol_message.html %}
 
 <div id="content">
 
 <!-- Title: Installing and Upgrading to Magento Community Edition (CE) and Magento Enterprise Edition (EE) -->
 <!-- URL: ce18-and-ee113-install-upgrade -->
-<h1>Installing and Upgrading to Magento Community Edition (CE) and Magento Enterprise Edition (EE)</h1>
-
-
-
-
-<div class="toc"> <h4 class="toc">Table of Contents</h4>
-<ul>
-<li><a href="#overview">Overview</a></li>
-<li><a href="#help">Getting Help With Your Installation or Upgrade</li>
-<li><a href="#get">Getting Magento Software</a></li>
-<li><a href="{{ site.v1xgdeurl }}/install/installing_install.html" target="_blank">Installing Magento CE or EE</a></li>
-<li><a href="{{ site.v1xgdeurl }}/install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a></li>
-</ul></div>
+<h1>Installing and Upgrading to OpenMage Magento LTS 19.X</h1>
 
 <h2 id="overview">Overview</h2>
 <p>We're happy you chose to install or upgrade your Magento software. We're going to help you to install or to upgrade to the following versions:</p>
-<ul><li>OpenMage LTS 1.9.x</li>
+<ul><li>OpenMage Magento LTS 1.9.x</li>
 <p>These releases include a number of improvements:</p>
-<ul><li><a href="http://www.magentocommerce.com/knowledge-base/entry/ce19-later-release-notes" target="_blank">Magento Community Edition (CE) Release Notes</a></li>
-<li><a href="http://www.magentocommerce.com/knowledge-base/entry/ee114-later-release-notes" target="_blank">Magento Enterprise Edition (EE) Release Notes</a></li>
+<ul><li><a href="https://github.com/OpenMage/magento-lts/releases" target="_blank"> Latest OpenMage Magento LTS Releases</a></li>
+<li><a href="{{ site.v1xgdeurl }}/ce19-ee114/ce1.9_release-notes.html" target="_blank"> Old Magento Community Edition (CE) Release Notes</a></li>
 <li><a href="{{ site.v1xgdeurl }}/ce19-ee114-home.html" target="_blank">Magento CE and EE documentation home page</a>, which also has information about new features</li></ul>
-<div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}images/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use CE 1.9.1 or EE 1.14.1 or later for <em>all new EE installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
+<div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}images/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use Magento LTS 1.9.3 or later for <em>all new installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
 
 <p>The sections that follow get you started on your installation or upgrade. Detailed, step-by-step procedures are discussed in the following articles:</p>
 <ul><li><a href="{{ site.v1xgdeurl }}/install/installing_install.html" target="_blank">Installing Magento CE or Magento EE</a></li>
@@ -62,19 +36,13 @@ guide_version: '1.9.x'
   <th>How to get help</th>
 </tr>
 <tr> 
-  <td>Magento CE and Magento EE</td>
-  <td><ul><li><a href="http://www.magentocommerce.com/boards/" target="_blank">Magento support forums</a></li>
+  <td>OpenMage Magento LTS</td>
+  <td><ul><li><a href="https://discord.com/invite/EV8aNbU/" target="_blank">Join OpenMage Community Discord Server</a></li>
   <!-- <li><a href="http://magento.stackexchange.com" target="_blank">magento.stackexchange.com</a></li> -->
-  <li><a href="https://twitter.com/ask_magento" target="_blank">Twitter (<tt>@ask_magento</tt>)</a></li></ul>
+  <li><a href="https://twitter.com/OpenMageProject" target="_blank">Twitter (<tt>@OpenMageProject</tt>)</a></li>
+  <li><a href="https://github.com/OpenMage/magento-lts/issues" target="_blank">OpenMage Github Issues</a></li>
+</ul>
   </td>
-</tr>
-<tr> 
-  <td>Magento CE</td>
-  <td><a href="http://www.magentocommerce.com/bug-tracking" target="_blank">Submit bug reports</td>
-</tr>
-<tr> 
-  <td>Magento EE only</td>
-  <td><a href="http://support.magentocommerce.com" target="_blank">Submit bug reports</a></td>
 </tr>
 </tbody>
 </table>
@@ -91,7 +59,7 @@ guide_version: '1.9.x'
   <td>Magento CE</td>
   <td><a href="http://www.magentocommerce.com/download" target="_blank">www.magentocommerce.com/download</a></td>
 </tr>
-<tr> 
+<tr>
   <td>Magento EE</td>
   <td>Use the following steps:
   <ol><li>Go to <a href="http://www.magento.com" target="_blank">www.magento.com</a></li>
@@ -113,4 +81,3 @@ guide_version: '1.9.x'
 
 </div>
 </body>
-</html>
