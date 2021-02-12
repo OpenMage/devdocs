@@ -1,0 +1,18 @@
+<svg width="257" height="63" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.ba{fill:#fb0e70;}
+            .bb{fill:#fff;font-size:45px;}
+            .bb,.bc{font-family:Poppins-SemiBold, Poppins;font-weight:600;letter-spacing:-0.05em;fill:#F1F1F1}
+            .bc{fill:#707070;font-size:38px;}</style>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path class="ba" d="m11,3.25l34,0a8,8 0 0 1 8,8l0,34a0,0 0 0 1 0,0l-42,0a0,0 0 0 1 0,0l0,-42a0,0 0 0 1 0,0z"/>
+  <text class="bb" id="svg_2" x="0" y="40">
+   <tspan x="0" y="47">m</tspan>
+  </text>
+    <text class="bc" transform="translate(56 40)">
+        <tspan x="0" y="0">openmage</tspan>
+    </text>
+ </g> 
+</svg>

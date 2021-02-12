@@ -4,6 +4,7 @@ pages:
       url: /frontend-dev-guide/bk-frontend-dev-guide.html
 
     - label: Conventional notations used in this Guide
+      include_versions: ["1.x"]
       url: /frontend-dev-guide/conventions.html
 
     - label: Magento cache overview
@@ -15,9 +16,6 @@ pages:
     - label: Themes
       url: /frontend-dev-guide/themes/theme-general.html
       children:
-
-        - label: Themes overview
-          url: /frontend-dev-guide/themes/theme-overview.html
 
         - label: Install a third-party storefront theme
           url: /frontend-dev-guide/themes/theme-install.html
@@ -43,8 +41,8 @@ pages:
         - label: Magento theme structure
           url: /frontend-dev-guide/themes/theme-structure.html
 
-        - label: Theme inheritance
-          url: /frontend-dev-guide/themes/theme-inherit.html
+        - label: Theme fallback model
+          url: /frontend-dev-guide/themes/theme-fallback.html
 
         - label: Adding custom favicons
           url: /frontend-dev-guide/themes/favicon.html
@@ -176,7 +174,7 @@ pages:
           url: /frontend-dev-guide/translations/translate_practice.html
 
     - label: Tools
-      include_versions: ["2.2", "2.3"]
+      include_versions: ["2.2", "2.3","1.x"]
       url: /frontend-dev-guide/tools/tools_overview.html
       children:
 
