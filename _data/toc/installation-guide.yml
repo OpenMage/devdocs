@@ -27,89 +27,34 @@ pages:
         - label: What is a docroot?
           url: /install-gde/basics/basics_docroot.html
 
-    - label: Getting Started
+
+    - label: Prerequisites
+      url: /install-gde/prereq/prereq-overview.html
       children:
-        - label: Helpful resources
-          url: /install-gde/install-resources-parent.html
+
+        - label: Apache
+          url: /install-gde/prereq/apache.html
+
+        - label: nginx
+          url: /install-gde/prereq/nginx.html
+
+        - label: PHP
+          url: /install-gde/prereq/php-settings.html
+
+        - label: MySQL
+          url: /install-gde/prereq/mysql.html
+
+        - label: Get your authentication keys
+          url: /install-gde/prereq/connect-auth.html
+
+        - label: Magento file system ownership and permissions
           children:
 
-            - label: Installation quick reference (tutorial)
-              url: /install-gde/install-quick-ref.html
+            - label: Overview of ownership and permissions
+              url: /install-gde/prereq/file-sys-perms-over.html
 
-            - label: Installation flow diagram
-              url: /install-gde/install-resource-diagram.html
-
-            - label: Installation roadmap (reference)
-              url: /install-gde/install-roadmap_part1.html
-
-        - label: Magento system requirements
-          url: /install-gde/system-requirements2.html
-          children:
-
-            - label: Magento technology stack requirements
-              url: /install-gde/system-requirements-tech.html
-
-            - label: Supported browsers
-              url: /install-gde/system-requirements_browsers.html
-
-            - label: Transport Layer Security (TLS) requirements
-              children:
-
-                - label: TLS 1.2 requirement for PayPal
-                  url: /install-gde/system-requirements_tls1-2.html
-
-                - label: TLS requirement for repo.magento.com
-                  url: /install-gde/system-requirements_repo-tls1-2.html
-
-        - label: Prerequisites
-          url: /install-gde/prereq/prereq-overview.html
-          children:
-
-            - label: Apache
-              url: /install-gde/prereq/apache.html
-
-            - label: nginx
-              url: /install-gde/prereq/nginx.html
-
-            - label: PHP
-              url: /install-gde/prereq/php-centos-ubuntu.html
-              include_versions: ["2.3"]
-              children:
-
-                - label: Required PHP settings
-                  url: /install-gde/prereq/php-settings.html
-                  include_versions: ["2.3"]
-
-            - label: PHP
-              include_versions: ["2.1", "2.2"]
-              children:
-
-                - label: PHP for Centos
-                  url: /install-gde/prereq/php-centos.html
-                  include_versions: ["2.1", "2.2"]
-
-                - label: PHP for Ubuntu
-                  url: /install-gde/prereq/php-ubuntu.html
-                  include_versions: ["2.1", "2.2"]
-
-                - label: Required PHP settings
-                  url: /install-gde/prereq/php-settings.html
-                  include_versions: ["2.1", "2.2"]
-
-            - label: MySQL
-              url: /install-gde/prereq/mysql.html
-
-            - label: Get your authentication keys
-              url: /install-gde/prereq/connect-auth.html
-
-            - label: Magento file system ownership and permissions
-              children:
-
-                - label: Overview of ownership and permissions
-                  url: /install-gde/prereq/file-sys-perms-over.html
-
-                - label: Set pre-installation ownership and permissions
-                  url: /install-gde/prereq/file-system-perms.html
+            - label: Set pre-installation ownership and permissions
+              url: /install-gde/prereq/file-system-perms.html
 
             - label: RabbitMQ
               url: /install-gde/prereq/install-rabbitmq.html
@@ -159,11 +104,11 @@ pages:
             - label: Update installation dependencies
               url: /install-gde/install/prepare-install.html
 
-        - label: Get help with your installation
-          url: /install-gde/install/get-help.html
+            - label: Get help with your installation
+              url: /install-gde/install/get-help.html
 
-        - label: Install options
-          url: /install-gde/continue-to-install.html
+            - label: Install options
+              url: /install-gde/continue-to-install.html
 
     - label: Setup Wizard Install
       children:

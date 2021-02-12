@@ -1,26 +1,11 @@
 - label: Setup
   children:
 
-
     - label: Installation Guide
-      url: /install/installing.html
-
-    - label: Extension Update and System Upgrade Guide
-      url: 
-      exclude_versions: ['2.0', '2.1']
-
-    - label: Component Manager and System Upgrade Guide
-      url: 
-      include_versions: ['2.0', '2.1']
-
-    - label: Configuration Guide
-      url: 
-    - label: Performance Best Practices
-      url: 
-      exclude_versions: ['2.0','2.1']
+      url: /install-gde/install-flow-diagram.html
 
     - label: Migration Guide
-      url: 
+      url: /migration/bk-migration-guide.html
 
     - label: Release Information
       url: /release-notes/bk-release-notes.html
@@ -70,6 +55,10 @@
 - label: Testing
   children:
 
+    - label: Functional Acceptance Testing (MFTF)
+      url: /mftf/2.3/introduction.html
+      exclude_versions: ['2.0', '2.1']
+      versionless: true
 - label: Functional Areas
   children:
 
@@ -78,7 +67,7 @@
       exclude_versions: ['2.0','2.1']
 
     - label: Checkout
-      url: 
+      url: /howdoi/checkout/checkout_overview.html
 
     - label: Inventory Management
       url: /inventory/index.html
@@ -86,13 +75,6 @@
 
     - label: Order Management
       url: http://omsdocs.magento.com/en/
-
-    - label: Payment Integrations
-      url: 
-
-    - label: Staging
-      url: 
-      exclude_versions: ['2.0']
 
 - label: Tutorials
   children:
