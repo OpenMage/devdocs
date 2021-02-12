@@ -25,7 +25,7 @@ The DevDocs and Magento teams verified and provide the following best practices 
 - [Best Practices for Extension Development](https://devdocs.magento.com/guides/v2.2/ext-best-practices/bk-ext-best-practices.html) 
     
     We also recommend the [Magento Marketplace Help Center](https://marketplacesupport.magento.com/hc/en-us) for extension questions.
-- [Programming Best Practices](https://devdocs.magento.com/guides/v2.2/ext-best-practices/extension-coding/common-programming-bp.html)
+- [Programming Best Practices](https://devdocs.magento.com/guides/v2.2/ext-best-practices/extension-coding/assets-programming-bp.html)
 - [Observers Best Practices](https://devdocs.magento.com/guides/v2.2/ext-best-practices/extension-coding/observers-bp.html)
 - [Theme development best practices](https://devdocs.magento.com/guides/v2.2/frontend-dev-guide/theme-best-practice.html)
 - [Performance Best Practices](https://devdocs.magento.com/guides/v2.2/performance-best-practices/)
