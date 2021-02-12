@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	 background-color: #ffffff;  margin: 0 auto; font-size:15px; font: 15px/22px 'Poppins' , Arial, sans-serif; color:#5A5A5A; font-weight:normal; width:1024px;
+	 background-color: #ffffff;  margin: 0 5vw; font-size:15px; font: 15px/22px 'Poppins' , Arial, sans-serif; color:#5A5A5A; font-weight:normal;
 	}
 
 /* containers */
@@ -23,7 +23,7 @@ body {
 #left-nav  ul { margin:10px 0 8px; }
 #left-nav li { border-bottom:2px dotted #dddddd; list-style: none;
 	padding: 10px 5px; margin: 10px 0; }
-#content-2 { float:right; width:700px; }
+#content-2 { float:right; width:1024px; }
 #left-nav h4 { color:#666666; border-bottom:2px dotted #dddddd; padding:5px; }
 #left-nav li.highlight a:link, #left-nav li.highlight a:visited {
     color: #FB0E70;
@@ -574,8 +574,7 @@ a.image:hover {
 
 .soap-api-menu {
     float: left;
-    margin-left: -45px;
-    width: 250px;
+    width: 20%;
 }
 .soap-api-menu {
     border-bottom: 1px solid #cac2b5;
@@ -615,10 +614,10 @@ a.image:hover {
     color: #FB0E70;
 }
 .soap-api-content {
-    float: right;
-    width: 750px;
+    float: left;
+    width: 70%;
     clear: right;
-    margin-right: -45px;
+    margin-left: 2vw;
 }
 .soap-api-menu li.parent,
 .soap-api-menu > ul > li {
@@ -687,7 +686,7 @@ a.image:hover {
 
 .message-banner {
 	background: #FBEDD9;
-	border: 1px solid #C27500;
+	border: 1px solid #FB0E70;
 	padding: 20px;
 	border-radius: 2px;
 	margin: 10px 0;
@@ -702,6 +701,7 @@ a.image:hover {
 
 .site-title h4
 {
+  width: 50%;
   float:right;
 }
 
