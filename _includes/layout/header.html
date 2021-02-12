@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/print.css" media="print"/>
+
+	{% include layout/header-styles.html %}
+	{% include layout/header-scripts.html %}
+
+	<link rel="shortcut icon" type="image/x-icon" href="/common/css/favicon.ico">
+	<link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="96x96">
+</head>
+<body class="layout-{{ page.layout }}">
+
+	<header class="site-header">
+
+		{% include layout/site-nav.html %}
+
+	</header>
+
+	<div class="global-wrapper">
+
+		{% include layout/after-site-header.html %}
+
+		<div class="main-container">
+			<a id="main-content"></a>

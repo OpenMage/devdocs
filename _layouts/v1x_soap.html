@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css">
-	<link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var currentUrl = window.location.href;
-			$.each($('.soap-api-menu a'), function(index, element) {
-				if (currentUrl.indexOf($(element).attr('href')) > -1) {
-					$(element).addClass('active');
-					$(element).parents('ul').show();
-					$(element).parents('li.parent').addClass('open');
-					$(element).nextAll('ul').show();
-				}
-			});
-			$.each($('.soap-api-menu li.parent .arr'), function(index, element) {
-				$(element).on('click', function(e){
-					$(this).parent('li.parent').toggleClass('open');
-					$(this).next('ul').slideToggle();
-				})
-			});
-		});
-	</script>
-	<title>{{ page.title }}</title>
-</head>
+{% include v1x/header.html %}
 <body>
 	<a name="top" href="{{ site.baseurl }}/index.html">
         <div class="site-title">

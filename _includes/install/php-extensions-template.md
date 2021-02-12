@@ -1,13 +1,25 @@
-{% assign product = packages | where_exp: 'package', "package.name contains 'php-req'" | first %}
+* ext-ctype
 
-{% for item in product.require %}
-  {% if item[0] contains 'ext-' %}
+* ext-curl
 
-*  {{ item[0] }}
-  {% endif %}
-{% endfor %}
-{% unless page.guide_version == '2.3' %}
+* ext-gd
 
-*  ext-sockets
+* ext-iconv
 
-{% endunless %}
+* ext-json
+
+* ext-intl
+
+* ext-mbstring
+
+* ext-openssl
+
+* ext-pdo
+
+* ext-pdo_mysqli
+
+* ext-soap
+
+* ext-simplexml
+
+* ext-sockets

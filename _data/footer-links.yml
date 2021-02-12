@@ -2,7 +2,7 @@
   url: https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md
 
 - label: Glossary
-  url: https://magento.github.io/glossary/index.html?audience=developer
+  url: https://glossary.magento.com/
 
 - label: Release Notes
   url: /release-notes/bk-release-notes.html
