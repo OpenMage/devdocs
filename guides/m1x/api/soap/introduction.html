@@ -99,7 +99,7 @@ $client-&gt;endSession($session);</pre>
 $session = $client-&gt;call('login', array('apiUser', 'apiKey'));
 
 $client-&gt;call('call', array($session, 'somestuff.method', array('arg1', 'arg2', 'arg3')));
-$client-&gt;call('call', array($session, 'somestuff.method', 'arg1'));
+$client-&gt;call('call', array($session, 'somestuff.method', array('arg1')));
 $client-&gt;call('call', array($session, 'somestuff.method'));
 $client-&gt;call('multiCall', array($session,
      array(
