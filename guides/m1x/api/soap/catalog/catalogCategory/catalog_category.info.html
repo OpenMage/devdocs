@@ -53,7 +53,7 @@ title: Category Info
 </tr>
 <tr>
 <td> string </td>
-<td> store </td>
+<td> storeView </td>
 <td> Store view ID or code (optional) </td>
 </tr>
 <tr>
@@ -293,6 +293,21 @@ var_dump($result);</pre>
 $sessionId = $proxy-&gt;login((object)array('username' =&gt; 'apiUser', 'apiKey' =&gt; 'apiKey'));
 
 $result = $proxy-&gt;catalogCategoryInfo((object)array('sessionId' =&gt; $sessionId-&gt;result, 'categoryId' =&gt; '5'));
+var_dump($result-&gt;result);</pre>
+		</div>
+</div></div>
+
+<h5><a name="catalog_category.info-RequestExampleSOAPV2%28WSIComplianceMode%29"></a>Filter by StoreView V2 (WS-I Compliance Mode)</h5>
+
+Attention: In WS-I Compliance Mode the parameter that is used to retrieve data for a specific storeView is named `store` instead of `storeView`.
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<div>
+		<pre class="theme: Default; brush: php; gutter: false">$proxy = new SoapClient('http://magentohost/api/v2_soap/?wsdl');
+
+$sessionId = $proxy-&gt;login((object)array('username' =&gt; 'apiUser', 'apiKey' =&gt; 'apiKey'));
+
+$result = $proxy-&gt;catalogCategoryInfo((object)array('sessionId' =&gt; $sessionId-&gt;result, 'categoryId' =&gt; '5', 'store' => '1' ));
 var_dump($result-&gt;result);</pre>
 		</div>
 </div></div>
