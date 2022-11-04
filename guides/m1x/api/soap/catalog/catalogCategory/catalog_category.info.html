@@ -307,7 +307,7 @@ Attention: In WS-I Compliance Mode the parameter that is used to retrieve data f
 
 $sessionId = $proxy-&gt;login((object)array('username' =&gt; 'apiUser', 'apiKey' =&gt; 'apiKey'));
 
-$result = $proxy-&gt;catalogCategoryInfo((object)array('sessionId' =&gt; $sessionId-&gt;result, 'categoryId' =&gt; '5', 'store' => '1' ));
+$result = $proxy-&gt;catalogCategoryInfo((object)array('sessionId' =&gt; $sessionId-&gt;result, 'categoryId' =&gt; '5', 'store' =&gt; '1' ));
 var_dump($result-&gt;result);</pre>
 		</div>
 </div></div>
