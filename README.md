@@ -183,16 +183,6 @@ To use Docker and Docker Compose, first download and install Docker for the appr
 
 You can deploy the devdocs site locally using [this Vagrant project](https://github.com/magento-devdocs/vagrant-for-magento-devdocs).
 
-***
-
-If you have questions, open an issue and ask us. We're looking forward to hearing from you!
-
-*	<a href="https://twitter.com/MagentoDevDocs" class="twitter-follow-button" data-show-count="false">Follow @MagentoDevDocs</a>
-
-*	<a href="mailto:DL-Magento-Doc-Feedback@magento.com">E-mail us</a>
-
-*	<a href="https://devdocs.magento.com">Visit our documentation site</a>, built using [GitHub pages](https://pages.github.com/).
-
 ## Build DevDocs in Windows
 
 Some of the technologies we use to develop DevDocs is not compatible with Windows, such as [Jekyll](https://jekyllrb.com/docs/windows/). For this reason, we do not support DevDocs management in Windows; however, we have documented the following procedures to build the DevDocs in a Windows environment. Any further use of this setup or troubleshooting is up to you. 
