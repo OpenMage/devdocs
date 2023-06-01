@@ -698,3 +698,19 @@ a.image:hover {
 {
   float:right;
 }
+
+#footer
+{
+  clear: both;
+  margin-top: 4em;
+  padding: 1em;
+  width:100%;
+  background-color: #000537;
+  box-sizing: border-box;
+}
+
+#imprint
+{
+  position: absolute;
+  right: 1em; 
+}
