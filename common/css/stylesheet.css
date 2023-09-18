@@ -705,12 +705,18 @@ a.image:hover {
   float:right;
 }
 
-.site-reference
+#footer
 {
-	height:10%;
-	width:100%;
-	background: #fb0e70;
-	color: white;
-	padding: 5% 0;
+  clear: both;
+  margin-top: 4em;
+  padding: 1em;
+  width:100%;
+  background-color: #000537;
+  box-sizing: border-box;
 }
 
+#imprint
+{
+  position: absolute;
+  right: 1em; 
+}
