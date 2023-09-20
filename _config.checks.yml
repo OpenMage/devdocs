@@ -13,7 +13,7 @@ html-proofer:
   :parallel:
     :in_processes: 3
   :file_ignore:
-  - !ruby/regexp /guides\/v1.9.x/
+  - !ruby/regexp /guides\/v19.x/
   - !ruby/regexp /template\.html/
   - !ruby/regexp /whats-new\.html/
   :url_ignore:
