@@ -1,0 +1,569 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Frontend Developer Guide</title>
+    <meta name="description" content="OpenMage LTS Developer Documentation.">
+
+    <link rel="stylesheet" href="/assets/css/app.css"/>
+    <link rel="stylesheet" href="/assets/css/print.css" media="print"/>
+    <link rel="stylesheet" type="text/css" href="/common/css/stylesheet.css">
+
+    <link rel="stylesheet" href="/common/css/stylesheet-fonts.css" type="text/css">
+    <link rel="stylesheet" href="/common/css/devdocs.css"/>
+    <link rel="alternate" type="application/rss+xml" title="OpenMage DevDocs RSS" href="/feed.xml"/>
+
+    <script>
+        var baseUrl = "";
+        var algolia = {
+            id: "E642SEDTHL",
+            index: "devdocs",
+            key: "d2d0f33ab73e291ef8d88d8b565e754c"
+        };
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/common/css/favicon.ico">
+    <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="96x96">
+</head>
+<!-- Magento for Developers: Part 1&mdash;Introduction to Magento -->
+<!-- magento-for-dev-part-1-introduction-to-magento -->
+<body class="layout-default">
+<header class="site-header">
+    <nav class="site-nav">
+        <div class="menu-btn">
+            <button id="menu-btn" class="menu-trigger menu-icon" aria-haspopup="true" aria-controls="nav-main"></button>
+        </div>
+        <div class="nav-container">
+            <a class="logo" href="/">
+                <svg width="257" height="63" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>.ba {
+                            fill: #fb0e70;
+                        }
+
+                        .bb {
+                            fill: #fff;
+                            font-size: 45px;
+                        }
+
+                        .bb, .bc {
+                            font-family: Poppins-SemiBold, Poppins;
+                            font-weight: 600;
+                            letter-spacing: -0.05em;
+                            fill: #F1F1F1
+                        }
+
+                        .bc {
+                            fill: #707070;
+                            font-size: 38px;
+                        }</style>
+                    </defs>
+                    <g class="layer">
+                        <title>OpenMage Magento</title>
+                        <path class="ba"
+                              d="m11,3.25l34,0a8,8 0 0 1 8,8l0,34a0,0 0 0 1 0,0l-42,0a0,0 0 0 1 0,0l0,-42a0,0 0 0 1 0,0z"/>
+                        <text class="bb" id="svg_2" x="0" y="47">
+                            <tspan x="0" y="47">m</tspan>
+                        </text>
+                        <text class="bc" transform="translate(56 40)">
+                            <tspan x="0" y="0">openmage</tspan>
+                        </text>
+                    </g>
+                </svg>
+                <span class="site-logo">DevDocs</span>
+            </a>
+            <div id="nav-main" class="nav-main-wrap" aria-labelledby="menu-btn">
+                <!-- Main Navigation -->
+                <ul class="nav-main" role="menubar">
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Setup</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class="active " role="menuitem">
+                                    <a href="/guides/v19.x/install-gde/install-flow-diagram.html">Installation Guide</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/migration/bk-migration-guide.html">Migration Guide</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/release-notes/bk-release-notes.html">Release Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Development</span>
+                        <div class="nav-popup">
+                            <div class="nav-section">
+                                <div class="nav-section-title">Backend</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Architecture</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">PHP Developer Guide</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Extension Developer Best Practices</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Module Reference Guide</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Coding Standards</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="https://github.com/OpenMage/magento-lts">Contribute!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <div class="nav-section-title">Frontend</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Frontend Developer Guide</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <div class="nav-section-title">API</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Get Started with Magento Web APIs</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/api/rest-api-index.html">REST API Reference</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/api/soap-api-index.html">SOAP API Reference</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Testing</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <a href="/mftf/2.3/introduction.html">Functional Acceptance Testing (MFTF)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Functional Areas</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <span>Advanced Reporting</span>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/howdoi/checkout/checkout_overview.html">Checkout</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/inventory/index.html">Inventory Management</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="http://omsdocs.magento.com/en/">Order Management</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Old Documantation</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/">Magento 1 Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul><!-- /.nav-main -->
+            </div>
+            <div class="search-btn">
+                <button class="search-trigger search-icon" aria-label="Search"></button>
+            </div>
+            <form class="quick-search" action="/search.html" method="get" novalidate="novalidate">
+                <input type="search" name="q" placeholder="Search"/>
+                <button class="quick-search-close" aria-label="Close Search">&times;</button>
+            </form>
+        </div>
+    </nav><!-- #site-nav -->
+    <div class="nav-main-fader"></div>
+</header>
+<div class="global-wrapper">
+    <div class="main-container">
+        <a id="main-content"></a>
+        <div class="content-container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <a href="#" data-proofer-ignore class="toc-toggler">Table of Contents</a>
+                <div class="sidebar-wrapper">
+                    <h4 class="guide-title">Frontend Developer Guide</h4>
+                    <div class="collapsible-navigation">
+                        <ul>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html">
+                                    Introduction
+                                </a>
+                            </li>
+                            <li class=" " role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-2.html">
+                                    Supported Devices and Browsers
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-3.html">
+                                    Understanding the Changes in the Responsive Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-4.html">
+                                    Installing Compass and Sass
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-5.html">
+                                    Disabling the Magento Cache
+                                </a>
+                            </li>
+                            <li class="active" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html">
+                                    Copying Files to Create Your Custom Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-7.html">
+                                    Responsive Theme Reference
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-8.html">
+                                    Removing Sample Data Assets
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-9.html">
+                                    Advanced Topics
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-10.html">
+                                    Getting Help With Your Theme
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- /sidebar -->
+            <section class="content">
+                <div class="content-wrap">
+                    <!-- page-header -->
+                    <section class="page-intro">
+                        <h1 id="theme" class="page-heading">Copying Files to Create Your Custom Theme</h1>
+                    </section>
+
+                    <p>This section discusses how to start building a custom responsive theme. </p>
+
+                    <h2 id="theme-structure">Step 1: Creating a Directory Structure for Your Responsive Theme</h2>
+                    <p>You'll do your responsive theme development using a copy of the responsive theme provided with Magento CE and EE.
+                        This section discusses how to create new top-level directories for your theme and to copy files to those
+                        directories.</p>
+                    <p>The <tt>rwd/default</tt> theme falls back directly to the <tt>base/default</tt> theme, so themes in the <tt>default</tt>
+                        package will never be included as a part of the fallback chain.</p>
+                    <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/icon-note.png" alt="note" align="left"
+                                                        width="40"><span><strong>Note</strong>: <em>Magento EE only.</em> The <tt>enterprise/default</tt> theme is completely replaced by <tt>rwd/enterprise</tt> and therefore, <tt>enterprise/default</tt> is not included as a part of the fallback chain.
+    </span>
+                    </div>
+
+                    <!-- <p>Magento CE 1.9 and Magento EE 1.14 have a new theme fallback structure that provides infinite levels of fallback. Learn more about this fallback structure in the <a href="#" style="color: red;">Magento Infinite Theme Fallback Structure</a> article.</p>
+                     -->
+                    <p>The top-level directories you'll need are:</p>
+                    <ul>
+                        <li><tt>[your Magento install dir]/app/design/frontend/custompackage/customtheme</tt></li>
+                        <li><tt>[your Magento install dir]/skin/frontend/custompackage/customtheme</tt></li>
+                    </ul>
+                    <p>To create those directories and to add your theme configuration:</p>
+                    <ol>
+                        <li>Using a command shell, log in to your Magento host as a user with privileges to write to the web server
+                            docroot. (Typically, this is the web server user.)
+                        </li>
+                        <li>Enter the following commands in the order shown:
+                            <pre>cd <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">[your Magento install dir]</a>
+mkdir -p app/design/frontend/custompackage/customtheme
+mkdir -p skin/frontend/custompackage/customtheme</pre>
+                        </li>
+                        <li>Create another directory for your theme configuration and change to that directory:
+                            <pre>mkdir app/design/frontend/custompackage/customtheme/etc
+cd app/design/frontend/custompackage/customtheme/etc</pre>
+                        </li>
+                        <li>Use <tt>vim</tt> or another text editor to create your theme configuration file named <tt>theme.xml</tt>
+                            there:
+                            <pre>vim theme.xml</pre>
+                        </li>
+                        <li id="themexml"><tt>theme.xml</tt> must have different contents for Magento CE or Magento EE:
+                            <ul>
+                                <li>Magento CE:
+                                    <pre>
+                        <code>
+&lt;?xml version="1.0"?&gt;
+&lt;theme&gt;
+    &lt;parent&gt;rwd/default&lt;/parent&gt;
+&lt;/theme&gt;
+                        </code>
+                    </pre>
+                                </li>
+                                <li>Magento EE:
+                                    <pre>
+                        <code>
+&lt;?xml version="1.0"?&gt;
+&lt;theme&gt;
+    &lt;parent&gt;rwd/enterprise&lt;/parent&gt;
+&lt;/theme&gt;
+                        </code>
+                    </pre>
+                                </li>
+                                <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/icon-important.png"
+                                                                    alt="important" align="left"
+                                                                    width="40"><span><strong>Important</strong>: It's very important you have a <tt>theme.xml</tt> in the <tt>app/design/frontend/custompackage/customtheme/etc</tt> directory with exactly the contents shown. Failure to configure <tt>theme.xml</tt> correctly prevents Magento from loading your theme.</span>
+                                </div>
+
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h2 id="theme-copyfiles">Step 2: Copying Files For Your Theme</h2>
+                    <p>Use the following commands to copy files for your custom theme:</p>
+                    <pre>cd <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">[your Magento install dir]</a>
+cp -R skin/frontend/rwd/default/images skin/frontend/custompackage/customtheme
+cp -R skin/frontend/rwd/default/scss skin/frontend/custompackage/customtheme
+                        <!-- cp skin/frontend/rwd/default/scss/config.rb skin/frontend/custompackage/customtheme --></pre>
+                    <p>Copying the <tt>images</tt> directory is important because the CSS uses relative image paths. To avoid
+                        duplicating Sass files, review the information discussed in
+                        <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-9.html#sass-fallback-structure">
+                            Sass Fallback Structure
+                        </a>.</p>
+                    <p>The following figure shows how your custom theme directory structure looks after copying these files and
+                        directories.</p>
+                    <img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/custom_skin-dir.png">
+
+                    <h3 id="theme-compass">Step 3: Configuring a Compass Watcher</h3>
+                    <p>You can configure Compass to watch your skin directories for changes to CSS and JavaScript and to compile them
+                        when something changes.</p>
+                    <p>You can do this in either of the following ways:</p>
+                    <ul>
+                        <li><em>(Recommended)</em> Using your PHP IDE. For example, if you use PhpStorm, see <a
+                                href="https://www.jetbrains.com/help/phpstorm/transpiling-compass-to-css.html"
+                                target="_blank">Working with Sass and SCSS in Compass Projects</a> and <a
+                                href="https://www.jetbrains.com/help/phpstorm/using-file-watchers.html" target="_blank">Using File
+                            Watchers</a>.
+                        </li>
+                        <li>Using following commands:
+                            <pre>cd <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">[your Magento install dir]</a><em>/custom-theme-dir</em>/scss
+compass watch .</pre>
+                            For example, if Magento is installed in <tt>/var/www/html/magento</tt>, enter:
+                            <pre>cd /var/www/html/magento/skin/frontend/custompackage/customtheme/scss
+compass watch .</pre>
+                        </li>
+                    </ul>
+                    <p>For more information, see <a href="http://beta.compass-style.org/help/documentation/command-line/" target="_blank">Compass
+                        Command Line Documentation</a>.</p>
+
+                    <h4 id="theme-compass-success">Success Messages</h4>
+                    <p>Messages similar to the following display to indicate the command completed successfully:</p>
+                    <pre>>>> Change detected at 09:57:12 to: madisonisland-ie8.scss
+   create ./../css/madisonisland-ie8.css
+   create ./../css/styles.css
+   create ./../css/madisonisland.css
+   create ./../css/styles-ie8.css
+   create ./../css/scaffold-forms.css
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+</pre>
+
+                    <h4 id="theme-compass-fail">Failure Message</h4>
+                    <p>If the following message displays, it likely indicates that <tt>config.rb</tt> is not in the correct location:
+                    </p>
+                    <pre>Nothing to compile. If you're trying to start a new project, you have left off the directory argument.</pre>
+                    <p>Enter the following commands to verify you have <tt>config.rb</tt> in the correct location:</p>
+                    <pre>cd <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">[your Magento install dir]</a>
+ls skin/frontend/custompackage/customtheme/scss</pre>
+                    <p>If there is no <tt>config.rb</tt> in that location, enter the following command:</p>
+                    <pre>cp skin/frontend/rwd/default/scss/config.rb skin/frontend/custompackage/customtheme/scss</pre>
+                    <p>Compass requires a <tt>config.rb</tt> file located in the directory from which you run this command. The sample
+                        provided with Magento CE and EE follows:</p>
+                    <pre><code>
+# note: this should never truly be referenced since we are using relative assets
+http_path = "/skin/frontend/rwd/default/"
+css_dir = "../css"
+sass_dir = "../scss"
+images_dir = "../images"
+javascripts_dir = "../js"
+relative_assets = true
+
+output_style = :expanded
+environment = :production
+        </code></pre>
+                    <p>After correcting the issue, try the <tt>compass watch</tt> commands discussed in <a href="#theme-compass">Step 3:
+                        Configuring a Compass Watcher</a>.</p>
+
+                    <h2>Step 4: Configuring Magento to Load Your Theme</h2>
+                    <p>This section discusses how to configure Magento to load your new theme.</p>
+                    <ol>
+                        <li>Log in to the Magento Admin Panel as an administrator.</li>
+                        <li>Click <strong>System</strong> > <strong>Configuration</strong> > GENERAL > <strong>Design</strong>.</li>
+                        <li>In the right pane, click <strong>Package</strong> to expand it.</li>
+                        <li>In the <strong>Current Package Name</strong> field, enter <tt>custompackage</tt></li>
+                        <li>In the right pane, expand <strong>Themes</strong>.</li>
+                        <li>In the <strong>Default</strong> field, enter <tt>customtheme</tt><br/>
+                            The following figure shows an example.<br/>
+                            <img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/admin-panel-custom-theme.png" width="600px" height="481px">
+                        </li>
+                        <li>In the top right corner of the page, click <strong>Save Config</strong>.<br/>
+                            If an error displays when you attempt to save the configuration, see <a href="#theme-admin-trouble">Troubleshooting
+                                Theme Configuration</a>.
+                        </li>
+                        <li>If prompted, flush the cache:
+                            <ol>
+                                <li>Click <strong>System</strong> > <strong>Configuration</strong> > <strong>Cache Management</strong>.
+                                </li>
+                                <li>At the top of the page, click <strong>Flush Magento Cache</strong>.</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <h2>Step 5: Verifying Your Custom Theme</h2>
+                    <p>To verify that Magento loads your theme:</p>
+                    <ol>
+                        <li>Navigate to your web store in a web browser.</li>
+                        <li>View the web page source.</li>
+                        <li>If you see a reference to <tt>/skin/frontend/custompackage/customtheme/css/styles.css</tt>, you are ready to
+                            begin building your new theme.
+                        </li>
+                    </ol>
+                    <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/icon-note.png" alt="note" align="left"
+                                                        width="40"><span><strong>Note</strong>: If your theme fails to load properly, see the next section.
+    </span>
+                    </div>
+
+
+                    <h2 id="theme-admin-trouble">Troubleshooting Theme Configuration</h2>
+                    <p>See one of the following sections for troubleshooting assistance:</p>
+                    <ul>
+                        <li><a href="#theme-admin-trouble-table">General Troubleshooting</a></li>
+                        <li><a href="#theme-admin-trouble-files">Directory and File Reference</a></li>
+                    </ul>
+
+                    <h4 id="theme-admin-trouble-table">General Troubleshooting</h4>
+                    <p>The following sections assist you in determining the cause of errors you might experience after setting up your
+                        custom theme.</p>
+
+                    <h5>No formatting on the web store</h5>
+                    <p><em>Description</em>: Most likely an issue with <tt>theme.xml</tt>. You can confirm this by viewing the page
+                        source and searching for <tt>styles.css</tt>. If <tt>styles.css</tt> is loading from a path similar to the
+                        following, <tt>theme.xml</tt> is most likely not loading.</p>
+                    <pre>http://www.example.com/magento/skin/frontend/base/default/css/styles.css</pre>
+                    <p><em>Solution</em>: Enter the following command:</p>
+                    <pre>cat <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">[your Magento install dir]</a>/app/design/frontend/custompackage/customtheme/etc/theme.xml</pre>
+                    <p>If the error <tt>No such file or directory</tt> displays, check your directory paths and create
+                        <tt>theme.xml</tt> as discussed in <a href="#theme-copyfiles">Step 2: Copying Files For Your Theme</a>.</p>
+                    <p>If you have a <tt>theme.xml</tt>, check to make sure it's configured <em>exactly</em> as shown <a
+                            href="#themexml">here</a>.</p>
+
+                    <h5>Error saving the custom package and theme in the Admin Panel</h5>
+                    <p><em>Symptom</em>: The following error displays:</p>
+                    <pre>An error occurred while saving this configuration: package with this name does not exist and cannot be set.</pre>
+                    <p><em>Description</em>: The package and theme names you entered in the Admin Panel must be directories in a
+                        specific location on the file system. These directories don't exist. (See the figure in <a
+                                href="#theme-admin-trouble-files">Directory and File Reference</a>.) Check the path and spelling.</p>
+                    <p><em>Solution</em>: Repeat the tasks discussed in <a href="#theme-structure">Step 1: Creating a Directory
+                        Structure for Your Responsive Theme</a>.</p>
+
+                    <h5>Wrong formatting in the web store</h5>
+                    <p><em>Symptom</em>: Examples:</p>
+                    <ul>
+                        <li>No images display</li>
+                        <li>Only a list of categories displays on the left side of the page, with images after the text</li>
+                    </ul>
+                    <p><em>Description</em>: There is a different <tt>theme.xml</tt> for CE and EE. You might have used an EE <tt>theme.xml</tt>
+                        with CE or vice versa.</p>
+                    <p>You can verify this using a web browser inspector:</p>
+                    <ul>
+                        <li><tt>styles.css</tt> loads from the correct directory</li>
+                        <li>Some HTTP 403 (Forbidden) errors loading images</li>
+                        <li>Some HTTP 404 (Not Found) errors loading images from <tt>skin/frontend/base/default/images/media</tt> (which
+                            doesn't exist)
+                        </li>
+                    </ul>
+                    <p><em>Solution</em>: Review the information discussed in <a href="#theme-copyfiles">Step 2: Copying Files For Your
+                        Theme</a>.</p>
+                    <p>Make sure <tt>theme.xml</tt> for CE or EE is configured <em>exactly</em> as shown <a href="#themexml">here</a>.
+                    </p>
+
+                    <h4 id="theme-admin-trouble-files">Directory and File Reference</h4>
+                    <p>The following figure shows the directory structure in a properly configured system, as well as the location of
+                        <tt>theme.xml</tt>, the custom theme configuration file.</p>
+                    <img src="{{ site.baseurl }}{{ site.v1xgdeurl }}/images/custom-theme-dir-structure_image.png">
+                </div>
+                <!-- /.content-wrap -->
+                <div class="page-info">
+                    <div class="github-link">
+                        <a class="improve-page"
+                           href="https://github.com/OpenMage/devdocs/blob/master/guides/v19.x/install-gde/install-flow-diagram.md"
+                           target="_blank">
+                            Edit this page on GitHub
+                        </a>
+                    </div>
+                    <div class="new-issue">
+                        <a href="https://github.com/OpenMage/devdocs/issues/new?title=Feedback on page: /guides/v19.x/install-gde/install-flow-diagram.html"
+                           target="_blank">
+                            Give us feedback
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div> <!-- /.content-container -->
+    </div>
+    <!-- /.main-container -->
+</div>
+<!-- /#gl-wrapper -->
+
+<!-- footer-->
+<div class="page-footer">
+    <div class="container">
+        <div class="copyright-links">
+            <ul class="nav footer-links">
+                <li class=" " role="menuitem">
+                    <a href="https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md">Become a
+                        Contributor</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="https://glossary.magento.com/">Glossary</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="/guides/v19.x/release-notes/bk-release-notes.html">Release Notes</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="/magento-third-party.html">Third-Party Licenses</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-date">&copy; 2024 OpenMage. All rights reserved.</div>
+    </div>
+</div>
+<!-- / #footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="/assets/js/app.min.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>OpenMage for Developers: Part 2&mdash;The OpenMage Config</title>
+    <title>Frontend Developer Guide</title>
     <meta name="description" content="OpenMage LTS Developer Documentation.">
 
     <link rel="stylesheet" href="/assets/css/app.css"/>
@@ -207,47 +207,57 @@
             <aside class="sidebar">
                 <a href="#" data-proofer-ignore class="toc-toggler">Table of Contents</a>
                 <div class="sidebar-wrapper">
-                    <h4 class="guide-title">Developer Guide</h4>
+                    <h4 class="guide-title">Frontend Developer Guide</h4>
                     <div class="collapsible-navigation">
                         <ul>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html">
+                                    Introduction
+                                </a>
+                            </li>
                             <li class=" " role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-1.html">
-                                    Introduction to OpenMage
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-2.html">
+                                    Supported Devices and Browsers
                                 </a>
                             </li>
                             <li class="active" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-2.html">
-                                    The OpenMage Config
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-3.html">
+                                    Understanding the Changes in the Responsive Theme
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-3.html">
-                                    OpenMage Controller Dispatch
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-4.html">
+                                    Installing Compass and Sass
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-4.html">
-                                    OpenMage Layouts, Blocks and Templates
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-5.html">
+                                    Disabling the Magento Cache
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-5.html">
-                                    OpenMage Models and ORM Basics
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html">
+                                    Copying Files to Create Your Custom Theme
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-6.html">
-                                    OpenMage Setup Resources
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-7.html">
+                                    Responsive Theme Reference
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-7.html">
-                                    Advanced ORM: Entity Attribute Value
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-8.html">
+                                    Removing Sample Data Assets
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-8.html">
-                                    Varien Data Collections
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-9.html">
+                                    Advanced Topics
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-10.html">
+                                    Getting Help With Your Theme
                                 </a>
                             </li>
                         </ul>
@@ -259,185 +269,60 @@
                 <div class="content-wrap">
                     <!-- page-header -->
                     <section class="page-intro">
-                        <h1 class="page-heading">The OpenMage Config</h1>
+                        <h1 class="page-heading">Understanding the Changes in the Responsive Theme</h1>
                     </section>
-                    <p class="para1">The config is the beating heart of the Magento System. It describes, in whole,
-                        almost any module, model, class, template, etc. than you'll need to access. It's a level of
-                        abstraction that most PHP developers aren't used to working with, and while it adds development
-                        time in the form of confusion and head scratching, it also allows you an unprecedented amount of
-                        flexibility as far as overriding default system behaviors go. </p>
-                    <p>To start with, we're going to create a Magento module that will let us view the system config in
-                        our web browser. Follow along by copying and pasting the code below, it's worth going through on
-                        your own as a way to start getting comfortable with things you'll be doing while working with
-                        Magento, as well as learning key terminology.</p>
-                    <a name="1"></a>
-                    <h2>Setting up a Module Directory Structure</h2>
-                    <p>We're going to be creating a Magento module. A module is a group of php and xml files meant to
-                        extend the system with new functionality, or override core system behavior. This may meaning
-                        adding additional data models to track sales information, changing the behavior of existing
-                        classes, or adding entirely new features. </p>
-                    <p>It's worth noting that most of the base Magento system is built using the same module system
-                        you'll be using. If you look in </p>
-                    <pre>app/code/core/Mage</pre>
-                    <p>each folder is a separate module built by the Magento team. Together, these modules form the
-                        community shopping cart system you're using. Your modules should be placed in the following
-                        folder</p>
-                    <pre>app/code/local/Packagename</pre>
-                    <p>"Packagename" should be a unique string to Namespace/Package your code. It's an unofficial
-                        convention that this should be the name of your company. The idea is to pick a string that no
-                        one else in the world could possibly be using.</p>
-                    <pre>app/code/local/Microsoft</pre>
-                    <p>We'll use "Magentotutorial".</p>
-                    <p>So, to add a module to your Magento system, create the following directory structure</p>
-                    <pre>app/code/local/Magentotutorial/Configviewer/Block
-                    app/code/local/Magentotutorial/Configviewer/controllers
-                    app/code/local/Magentotutorial/Configviewer/etc
-                    app/code/local/Magentotutorial/Configviewer/Helper
-                    app/code/local/Magentotutorial/Configviewer/Model
-                    app/code/local/Magentotutorial/Configviewer/sql</pre>
-                    <p>You won't need all these folder for every module, but setting them all up now is a smart
-                        idea. </p>
-                    <p>Next, there's two files you'll need to create. The first, config.xml, goes in the etc folder you
-                        just created. </p>
-                    <pre>app/code/local/Magentotutorial/Configviewer/etc/config.xml</pre>
-                    <p>The second file should be created at the following location</p>
-                    <pre>app/etc/modules/Magentotutorial_Configviewer.xml</pre>
-                    <p>The naming convention for this files is Packagename_Modulename.xml.</p>
-                    <p>The config.xml file should contain the following XML. Don't worry too much about what all this
-                        does for now, we'll get there eventually</p>
-                    <pre>
-                    &lt;config>
-                        &lt;modules>
-                            &lt;Magentotutorial_Configviewer>
-                                &lt;version>0.1.0&lt;/version>
-                            &lt;/Magentotutorial_Configviewer>
-                        &lt;/modules>
-                    &lt;/config>
-                    </pre>
-                    <p>Finally, Magentotutorial_Configviewer.xml should contain the following xml.</p>
-                    <pre>
-                    &lt;config>
-                        &lt;modules>
-                            &lt;Magentotutorial_Configviewer>
-                                &lt;active>true&lt;/active>
-                                &lt;codePool>local&lt;/codePool>
-                            &lt;/Magentotutorial_Configviewer>
-                        &lt;/modules>
-                    &lt;/config>
-                    </pre>
-                    <p>That's it. You now have a bare bones module that won't do anything, but that Magento will be
-                        aware of. To make sure you've done everything right, do the following:
-                    <ol>
-                        <li>Clear your Magento cache</li>
-                        <li>In the Magento Admin, go to <strong>System->Configuration->Advanced</strong></li>
-                        <li>In the "Disable modules output" panel verify that Magentotutorial_Configviewer shows up</li>
-                    </ol>
-                    <p>Congratulations, you've built your first Magento module!</p>
-                    <a name="2"></a>
-                    <h2>Creating a Module Config</h2>
-                    <p>Of course, this module doesn't do anything yet. When we're done, our module will
-                    <ol>
-                        <li>Check for the existence of a "showConfig" query string variable</li>
-                        <li>If showConfig is present, display our Magento config and halt normal execution</li>
-                        <li>Check for the existence of an additional query string variable, showConfigFormat that will
-                            let us specify text or xml output.
+
+                    <p>The new responsive theme in EE 1.14 and CE 1.9 is based on the existing <tt>base/default</tt> theme. The new
+                        responsive theme has about 130 template files that have been modified to better handle the needs of responsive
+                        development. Following are some of the changes that have been made in these template files:</p>
+                    <ul>
+                        <li>Rearranged elements to work better with smaller viewports.</li>
+                        <li>Changed the <tt>Doctype</tt> to <tt>html</tt> to enable use of HTML5 elements. (To avoid large amounts of
+                            template modifications, HTML5 tags were implemented only when necessary.)
                         </li>
-                    </ol>
-                    <p>First, we're going to add the following &lt;global&gt; section to our config.xml file.</p>
-                    <pre>
-                    &lt;config>
-                        &lt;modules>...&lt;/modules>
-                        &lt;global>
-                            &lt;events>
-                                &lt;controller_front_init_routers>
-                                    &lt;observers>
-                                        &lt;Magentotutorial_configviewer_model_observer>
-                                            &lt;type>singleton&lt;/type>
-                                            &lt;class>Magentotutorial_Configviewer_Model_Observer&lt;/class>
-                                            &lt;method>checkForConfigRequest&lt;/method>
-                                        &lt;/Magentotutorial_configviewer_model_observer>
-                                    &lt;/observers>
-                                &lt;/controller_front_init_routers>
-                            &lt;/events>
-                        &lt;/global>
-                    &lt;/config>
-                    </pre>
-                    <p>Then, create a file at </p>
-                    <pre>Magentotutorial/Configviewer/Model/Observer.php</pre>
-                    <p>and place the following code inside</p>
-                    <pre>
-                    &lt;?php
-                        class Magentotutorial_Configviewer_Model_Observer {
-                            const FLAG_SHOW_CONFIG = 'showConfig';
-                            const FLAG_SHOW_CONFIG_FORMAT = 'showConfigFormat';
+                        <li>Refactored attributes of <tt>&lt;input></tt> elements to HTML5 standards.</li>
+                        <li>Refactored product lists to show varying number of products per column.</li>
+                        <li>Removed all <tt>&lt;fieldset></tt> elements because they don't work well in a responsive context.</li>
+                    </ul>
 
-                            private $request;
-
-                            public function checkForConfigRequest($observer) {
-                                $this-&gt;request = $observer-&gt;getEvent()-&gt;getData('front')-&gt;getRequest();
-                                if($this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG} === 'true'){
-                                    $this-&gt;setHeader();
-                                    $this-&gt;outputConfig();
-                                }
-                            }
-
-                            private function setHeader() {
-                                $format = isset($this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG_FORMAT}) ?
-                                $this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG_FORMAT} : 'xml';
-                                switch($format){
-                                    case 'text':
-                                        header("Content-Type: text/plain");
-                                        break;
-                                    default:
-                                        header("Content-Type: text/xml");
-                                }
-                            }
-
-                            private function outputConfig() {
-                                die(Mage::app()-&gt;getConfig()-&gt;getNode()-&gt;asXML());
-                            }
-                        }
-                    </pre>
-                    <p>That's it. Clear your Magento cache again and then load any Magento URL with a <tt>showConfig=true</tt>
-                        query string</p>
-                    <pre>http://magento.example.com/?showConfig=true</pre>
-                    <a name="3"></a>
-                    <h2>What am I looking at?</h2>
-                    <p>You should be looking at a giant XML file. This describes the state of your Magento system. It
-                        lists all modules, models, classes, event listeners or almost anything else you could think
-                        of.</p>
-                    <p>For example, consider the config.xml file you created above. If you search the XML file in your
-                        browser for the text <tt>Configviewer_Model_Observer</tt> you'll find your class listed. Every
-                        module's config.xml file is parsed by Magento and included in the global config.</p>
-                    <a name="4"></a>
-                    <h2>Why Do I Care?</h2>
-                    <p>Right now this may seem esoteric, but this config is key to understanding Magento. Every module
-                        you'll be creating will add to this config, and anytime you need to access a piece of core
-                        system functionality, Magento will be referring back to the config to look something up. </p>
-                    <p>A quick example: As an MVC developer, you've likely worked with some kind of helper class,
-                        instantiated something like </p>
-                    <pre>
-                    $helper_sales = new HelperSales();
-                    </pre>
-                    <p>One of the things Magento has done is abstract away PHP's class declaration. In Magento, the
-                        above code looks something like </p>
-                    <pre>
-                    $helper_sales = Mage::helper('sales');
-                    </pre>
-                    <p>In plain english, the static helper method will:
-                    <ol>
-                        <li>Look in the &lt;helpers /&gt; section of the Config.</li>
-                        <li>Within &lt;helpers /&gt;, look for a &lt;sales /&gt; section</li>
-                        <li>Within the &lt;sales /&gt; section look for a &lt;class /&gt; section</li>
-                        <li>Append the part after the slash to the value found in #3 (defaulting to <tt>data</tt> in
-                            this case)
+                    <h2>Changes to Layout Files</h2>
+                    <p>A number of the core layout files (<tt>catalog.xml</tt>, <tt>customer.xml</tt>) were slightly modified to account
+                        for responsive changes. There are only a few notable changes to the layout files:</p>
+                    <ul>
+                        <li><tt>
+                            <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html#intro-convention">
+                                [your Magento install dir]
+                            </a>
+                            /app/design/frontend/rwd/default/layout/page.xml</tt>
+                            was modified to include all of the new responsive assets.
                         </li>
-                        <li>Instantiate the class found in #4 (Mage_Sales_Helper_Data)</li>
-                    </ol>
-                    <p>While this seems like a lot of work (and it is), the key advantage is by always looking to the
-                        config file for class names, we can override core Magento functionality <strong>without</strong>
-                        changing or adding to the core code. This level of meta programming, not usually found in PHP,
-                        allows you to cleanly extend only the parts of the system you need to.</p>
+                        <li>Because two and three column layouts collapse to a single column on smaller viewports, all content in the
+                            <tt>left</tt> block are displayed under the main content. This is a problem because blocks&mdash;like the
+                            navigation on all My Account pages&mdash;must display above the main content on smaller viewports. To
+                            address this, a new <tt>left_first</tt> block was added that looks like the left column on larger viewports,
+                            but on smaller viewports, it displays above the main content.
+                        </li>
+                    </ul>
+
+                    <h2>Using the New Theme/Layout Structure&mdash;<em>Magento EE only</em></h2>
+                    <p>If you've worked with a previous version of Magento EE, you're aware that the <tt>enterprise/default</tt> theme
+                        contains copies of <em>many</em> of the layout and template files from <tt>base/default</tt>&mdash;some with
+                        very minor changes. This is not an optimal approach because as it results in duplicated content.</p>
+                    <p>The Magento EE responsive theme's <tt>rwd/enterprise</tt> directory includes only template and layout files that
+                        contain Magento EE-only features.</p>
+                    <p>Instead of copying layout files as the <tt>enterprise/default</tt> theme does, <tt>rwd/enterprise</tt> isolates
+                        changes in their own layout files in <tt>[your Magento install
+                            dir]app/design/frontend/rwd/enterprise/layout/enterprise</tt></p>
+                    <p>The <tt>rwd/enterprise</tt> theme replaces the <tt>enterprise/default</tt> theme and contains <em>far</em> fewer
+                        files than its predecessor (156 compared to 280). This new approach makes it easier for you to see what
+                        functionality is unique to Magento EE.</p>
+
+                    <h2>Changes to Magento Theme Fallback</h2>
+                    <p>Magento CE 1.9 and EE 1.14 both introduce a theme configuration file named <tt>theme.xml</tt>. This file allows
+                        theme developers to specify a parent theme which results in a more predictable and useful fallback than earlier
+                        versions.</p>
+                    <p>For more information, see <a href="http://alanstorm.com/magento_parent_child_themes" target="_blank">Alan Storm's
+                        Parent/Child Theme article</a>.</p>
                 </div>
                 <!-- /.content-wrap -->
                 <div class="page-info">

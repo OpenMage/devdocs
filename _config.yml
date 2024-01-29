@@ -116,7 +116,7 @@ check_links: true
 #
 # 1.x variables
 
-v1xgdeurl: /guides/v19.x/
+v1xgdeurl: /guides/v19.x
 v1xgithuburl: https://github.com/OpenMage/devdocs/tree/master
 v18xgdeurl: /guides/v1.8/
 
