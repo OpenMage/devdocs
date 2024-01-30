@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>OpenMage for Developers: Part 2&mdash;The OpenMage Config</title>
+    <title>Frontend Developer Guide</title>
     <meta name="description" content="OpenMage LTS Developer Documentation.">
 
     <link rel="stylesheet" href="/assets/css/app.css"/>
@@ -31,6 +31,8 @@
     <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="96x96">
 </head>
+<!-- Magento for Developers: Part 1&mdash;Introduction to Magento -->
+<!-- magento-for-dev-part-1-introduction-to-magento -->
 <body class="layout-default">
 <header class="site-header">
     <nav class="site-nav">
@@ -63,7 +65,7 @@
                         }</style>
                     </defs>
                     <g class="layer">
-                        <title>OpenMage</title>
+                        <title>OpenMage Magento</title>
                         <path class="ba"
                               d="m11,3.25l34,0a8,8 0 0 1 8,8l0,34a0,0 0 0 1 0,0l-42,0a0,0 0 0 1 0,0l0,-42a0,0 0 0 1 0,0z"/>
                         <text class="bb" id="svg_2" x="0" y="47">
@@ -133,7 +135,7 @@
                                 <div class="nav-section-title">API</div>
                                 <ul>
                                     <li class=" " role="menuitem">
-                                        <a href="/guides/v19.x/">Get Started with OpenMage Web APIs</a>
+                                        <a href="/guides/v19.x/">Get Started with Magento Web APIs</a>
                                     </li>
                                     <li class=" " role="menuitem">
                                         <a href="/guides/v19.x/api/rest-api-index.html">REST API Reference</a>
@@ -205,47 +207,57 @@
             <aside class="sidebar">
                 <a href="#" data-proofer-ignore class="toc-toggler">Table of Contents</a>
                 <div class="sidebar-wrapper">
-                    <h4 class="guide-title">Developer Guide</h4>
+                    <h4 class="guide-title">Frontend Developer Guide</h4>
                     <div class="collapsible-navigation">
                         <ul>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html">
+                                    Introduction
+                                </a>
+                            </li>
                             <li class=" " role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-1.html">
-                                    Introduction to OpenMage
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-2.html">
+                                    Supported Devices and Browsers
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-3.html">
+                                    Understanding the Changes in the Responsive Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-4.html">
+                                    Installing Compass and Sass
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-5.html">
+                                    Disabling the Magento Cache
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html">
+                                    Copying Files to Create Your Custom Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-7.html">
+                                    Responsive Theme Reference
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-8.html">
+                                    Removing Sample Data Assets
                                 </a>
                             </li>
                             <li class="active" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-2.html">
-                                    The OpenMage Config
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-9.html">
+                                    Advanced Topics
                                 </a>
                             </li>
                             <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-3.html">
-                                    Controller Dispatch
-                                </a>
-                            </li>
-                            <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-4.html">
-                                    Layouts, Blocks and Templates
-                                </a>
-                            </li>
-                            <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-5.html">
-                                    Models and ORM Basics
-                                </a>
-                            </li>
-                            <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-6.html">
-                                    Setup Resources
-                                </a>
-                            </li>
-                            <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-7.html">
-                                    Advanced ORM: Entity Attribute Value
-                                </a>
-                            </li>
-                            <li class="" role="menuitem">
-                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-dev-8.html">
-                                    Varien Data Collections
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-10.html">
+                                    Getting Help With Your Theme
                                 </a>
                             </li>
                         </ul>
@@ -257,187 +269,120 @@
                 <div class="content-wrap">
                     <!-- page-header -->
                     <section class="page-intro">
-                        <h1 class="page-heading">The OpenMage Config</h1>
+                        <h1 class="page-heading">Advanced Topics</h1>
                     </section>
-                    <p class="para1">The config is the beating heart of the OpenMage System. It describes, in whole,
-                        almost any module, model, class, template, etc. than you'll need to access. It's a level of
-                        abstraction that most PHP developers aren't used to working with, and while it adds development
-                        time in the form of confusion and head scratching, it also allows you an unprecedented amount of
-                        flexibility as far as overriding default system behaviors go. </p>
-                    <p>To start with, we're going to create a OpenMage module that will let us view the system config in
-                        our web browser. Follow along by copying and pasting the code below, it's worth going through on
-                        your own as a way to start getting comfortable with things you'll be doing while working with
-                        OpenMage, as well as learning key terminology.</p>
-                    <a name="1"></a>
-                    <h2>Setting up a Module Directory Structure</h2>
-                    <p>We're going to be creating a OpenMage module. A module is a group of php and xml files meant to
-                        extend the system with new functionality, or override core system behavior. This may meaning
-                        adding additional data models to track sales information, changing the behavior of existing
-                        classes, or adding entirely new features. </p>
-                    <p>It's worth noting that most of the base OpenMage system is built using the same module system
-                        you'll be using. If you look in </p>
-                    <pre>app/code/core/Mage</pre>
-                    <p>each folder is a separate module built by the OpenMage team. Together, these modules form the
-                        community shopping cart system you're using. Your modules should be placed in the following
-                        folder</p>
-                    <pre>app/code/local/Packagename</pre>
-                    <p>"Packagename" should be a unique string to Namespace/Package your code. It's an unofficial
-                        convention that this should be the name of your company. The idea is to pick a string that no
-                        one else in the world could possibly be using.</p>
-                    <pre>app/code/local/Microsoft</pre>
-                    <p>We'll use "OpenMagetutorial".</p>
-                    <p>So, to add a module to your OpenMage system, create the following directory structure</p>
-                    <pre>
-app/code/local/OpenMagetutorial/Configviewer/Block
-app/code/local/OpenMagetutorial/Configviewer/controllers
-app/code/local/OpenMagetutorial/Configviewer/etc
-app/code/local/OpenMagetutorial/Configviewer/Helper
-app/code/local/OpenMagetutorial/Configviewer/Model
-app/code/local/OpenMagetutorial/Configviewer/sql
-</pre>
-                    <p>You won't need all these folder for every module, but setting them all up now is a smart
-                        idea. </p>
-                    <p>Next, there's two files you'll need to create. The first, config.xml, goes in the etc folder you
-                        just created. </p>
-                    <pre>app/code/local/OpenMagetutorial/Configviewer/etc/config.xml</pre>
-                    <p>The second file should be created at the following location</p>
-                    <pre>app/etc/modules/OpenMagetutorial_Configviewer.xml</pre>
-                    <p>The naming convention for this files is Packagename_Modulename.xml.</p>
-                    <p>The config.xml file should contain the following XML. Don't worry too much about what all this
-                        does for now, we'll get there eventually</p>
-                    <pre>
-&lt;config>
-    &lt;modules>
-        &lt;OpenMagetutorial_Configviewer>
-            &lt;version>0.1.0&lt;/version>
-        &lt;/OpenMagetutorial_Configviewer>
-    &lt;/modules>
-&lt;/config>
-</pre>
-                    <p>Finally, OpenMagetutorial_Configviewer.xml should contain the following xml.</p>
-                    <pre>
-&lt;config>
-    &lt;modules>
-        &lt;OpenMagetutorial_Configviewer>
-            &lt;active>true&lt;/active>
-            &lt;codePool>local&lt;/codePool>
-        &lt;/OpenMagetutorial_Configviewer>
-    &lt;/modules>
-&lt;/config>
-</pre>
-                    <p>That's it. You now have a bare bones module that won't do anything, but that OpenMage will be
-                        aware of. To make sure you've done everything right, do the following:
+
+                    <p>After you get familiar with the new structure, we encourage you to read these topics to fully take advantage of
+                        responsive web design.</p>
+
+                    <h4>Getting Your Theme Ready for Production</h4>
+
+                    <p>To prepare your responsive theme for production, you should update <tt>config.rb</tt> in your theme directory to
+                        use these values:</p>
+                    <pre>output_style = &#58;compressed
+environment = &#58;production</pre>
+
+                    <p>After you do this, you should recompile all of your Sass files&mdash;you can do this on the command line by
+                        running these commands inside your theme directory: <tt>compass clean</tt> and then <tt>compass compile</tt>.
+                        Finally, deploy the compiled CSS to your production system.</p>
+
+                    <h2 id="sass-fallback-structure">Sass Fallback Structure</h2>
+                    <p>We recommend copying all of the Sass files from <tt>skin/frontend/rwd/default/scss</tt> to <tt>skin/frontend/custompackage/customtheme/scss</tt>
+                        to make it easy to get started with custom theme development. The downside of this approach is that it results
+                        in duplicating many files that you never edit directly.</p>
+                    <p>In the end, your custom theme must include all Sass partials you want to override. There are at least two ways to
+                        do this:</p>
+                    <ul>
+                        <li>If you followed the setup instructions in <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html#theme-structure">Step 1: Creating a Directory Structure
+                            for Your Responsive Theme</a>, you must delete some files from your custom theme.<br/>
+                            Delete the following directories to remove all the Sass partials that you copied from
+                            <tt>rwd/default</tt>:<br/>
+                            <pre>skin/frontend/custompackage/customtheme/scss/core/
+skin/frontend/custompackage/customtheme/scss/function/
+skin/frontend/custompackage/customtheme/scss/layout/
+skin/frontend/custompackage/customtheme/scss/mixin/
+skin/frontend/custompackage/customtheme/scss/module/
+skin/frontend/custompackage/customtheme/scss/override/
+skin/frontend/custompackage/customtheme/scss/vendor/</pre>
+                            The following files should now be located in <tt>skin/frontend/custompackage/customtheme/scss</tt>:<br/>
+                            <pre>_var.scss
+_core.scss
+styles-ie8.scss
+styles.scss
+scaffold-forms.scss
+_custom_core.scss
+_framework.scss</pre>
+                        </li>
+                        <li>If you're familiar with Magento theme development and you did <em>not</em> already copy Sass partials, copy
+                            <em>only</em> the Sass partials you want to override from <tt>rwd/default</tt> to <tt>skin/frontend/custompackage/customtheme/scss</tt>.
+                        </li>
+                    </ul>
+                    <p>Now you can set up a fallback structure:</p>
                     <ol>
-                        <li>Clear your OpenMage cache</li>
-                        <li>In the OpenMage Admin, go to <strong>System->Configuration->Advanced</strong></li>
-                        <li>In the "Disable modules output" panel verify that OpenMagetutorial_Configviewer shows up</li>
-                    </ol>
-                    <p>Congratulations, you've built your first OpenMage module!</p>
-                    <a name="2"></a>
-                    <h2>Creating a Module Config</h2>
-                    <p>Of course, this module doesn't do anything yet. When we're done, our module will
-                    <ol>
-                        <li>Check for the existence of a "showConfig" query string variable</li>
-                        <li>If showConfig is present, display our OpenMage config and halt normal execution</li>
-                        <li>Check for the existence of an additional query string variable, showConfigFormat that will
-                            let us specify text or xml output.
+                        <li>Add the following line to <tt>skin/frontend/rwd/default/config.rb</tt> (omit the first line if you're using
+                            CE):
+                            <pre>add_import_path &quot;../../../rwd/enterprise/scss&quot;
+add_import_path &quot;../../../rwd/default/scss&quot;</pre>
+                            The preceding causes Compass to look for Sass files in <tt>skin/frontend/rwd/enterprise/scss</tt> first and
+                            then in <tt>skin/frontend/rwd/default/scss</tt> if they can't be found in <tt>skin/frontend/custompackage/customtheme/scss</tt>.
+                        </li>
+                        <li>Following is what to do with copies of Sass files from <tt>rwd/default</tt>:<br/>
+                            <ul>
+                                <li><tt>styles.scss</tt>, <tt>styles-ie8.scss</tt>: You must copy these files into your custom theme so
+                                    that Compass knows which files to compile into CSS files.
+                                </li>
+                                <li><tt>_core.scss</tt>, <tt>framework.scss</tt>: You must copy these files into your custom theme so
+                                    Compass looks in the <tt>custompackage/customtheme</tt> directory for any of the files imported by
+                                    these two files.
+                                </li>
+                                <li><tt>_var.scss</tt>: You'll typically edit the values in this file for your custom theme.<br/>
+                                    If you don't like the idea of editing this file and want to override its values with a <tt>_var_custom.scss</tt>
+                                    file, make sure it gets imported immediately after <tt>_var.scss</tt>.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>As a reminder, to override Sass partials in <tt>rwd/default</tt>, you must copy them into your custom theme
+                            so they'll get included by Compass.<br/>
+                            <strong>Note</strong>: If you're using <tt>compass watch</tt> to recompile your Sass, you must stop and
+                            restart Compass any time you copy a new Sass file into your custom theme. Otherwise, the Compass compiler
+                            won't know about the existence of the new file.<br/>
+                            To avoid having to stop and restart <tt>compass watch</tt>, start your project by copying all Sass files
+                            from <tt>rwd/default</tt> into your custom theme, and then delete all unchanged Sass files at the end of
+                            your project.
                         </li>
                     </ol>
-                    <p>First, we're going to add the following &lt;global&gt; section to our config.xml file.</p>
-                    <pre>
-&lt;config>
-    &lt;modules>...&lt;/modules>
-    &lt;global>
-        &lt;events>
-            &lt;controller_front_init_routers>
-                &lt;observers>
-                    &lt;OpenMagetutorial_configviewer_model_observer>
-                        &lt;type>singleton&lt;/type>
-                        &lt;class>OpenMagetutorial_Configviewer_Model_Observer&lt;/class>
-                        &lt;method>checkForConfigRequest&lt;/method>
-                    &lt;/OpenMagetutorial_configviewer_model_observer>
-                &lt;/observers>
-            &lt;/controller_front_init_routers>
-        &lt;/events>
-    &lt;/global>
-&lt;/config>
-</pre>
-                    <p>Then, create a file at </p>
-                    <pre>OpenMagetutorial/Configviewer/Model/Observer.php</pre>
-                    <p>and place the following code inside</p>
-                    <pre>
-&lt;?php
-    class OpenMagetutorial_Configviewer_Model_Observer
-    {
-        const FLAG_SHOW_CONFIG = 'showConfig';
-        const FLAG_SHOW_CONFIG_FORMAT = 'showConfigFormat';
 
-        private $request;
+                    <h2 id="scaffold-forms">Scaffold Forms</h2>
+                    <p>The Magento responsive theme ships with <tt>skin/frontend/rwd/default/scss/scaffold-forms.scss</tt> that has
+                        styles that cause the labels of long forms (for example, the Billing Information step of checkout) to display to
+                        the left of their associated input on larger viewports (as opposed to on top). This layout is intended to make
+                        long forms seem less intimidating to users.</p>
+                    <p>However, these styles are not currently implemented because the Magento responsive theme must work well with
+                        internationalization (where the length of labels can vary greatly, thereby impacting the scaffold form
+                        layout).</p>
+                    <p>It's up to you whether or not to use these styles. To do so, move <tt>skin/frontend/rwd/default/scss/scaffold-forms.scss</tt>
+                        to <tt>core/_scaffold-forms.scss</tt> and edit <tt>scss/_core.scss</tt> to include it.</p>
 
-        public function checkForConfigRequest($observer)
-        {
-            $this-&gt;request = $observer-&gt;getEvent()-&gt;getData('front')-&gt;getRequest();
-            if($this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG} === 'true'){
-                $this-&gt;setHeader();
-                $this-&gt;outputConfig();
-            }
-        }
+                    <h2>High-Definition Images</h2>
+                    <p>The responsive theme has no high-resolution image solution for product listing pages. Refer to <a
+                            href="https://speakerdeck.com/brendanfalkowski/responsive-ecommerce-part-two#114" target="_blank">slides
+                        starting at 114</a> of Brendan Falkowski's Imagine 2013 talk for implementation suggestions. For a 2x solution,
+                        PictureFill (or similar polyfill) could be used, although it would need to be integrated with ElevateZoom.</p>
+                    <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}images/icon-note.png" alt="note" align="left"
+                                                        width="40"><span><strong>Note</strong>: Category banners and product detail pages use a 1.5x image solution.
+    </span>
+                    </div>
 
-        private function setHeader()
-        {
-            $format = isset($this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG_FORMAT}) ?
-            $this-&gt;request-&gt;{self::FLAG_SHOW_CONFIG_FORMAT} : 'xml';
-            switch($format){
-                case 'text':
-                    header("Content-Type: text/plain");
-                    break;
-                default:
-                    header("Content-Type: text/xml");
-            }
-        }
+                    <p>Magento does not resize the main product photo on product detail pages, so you must implement high-resolution
+                        support in your responsive theme. You must be careful with this if you have very large product photos because it
+                        could drastically impact performance.</p>
+                    <p>To constrain the size of your main product photo, open <tt>app/design/frontend/rwd/default/template/catalog/product/view/media.phtml</tt>
+                        and modify this line:
+                    <pre>&lt;?php echo $this-&gt;helper('catalog/image')-&gt;init($_product, 'image') ?&gt;</pre>
+                    to something like:
+                    <pre>src=&quot;&lt;?php echo $this-&gt;helper('catalog/image')-&gt;init($_product, 'image')-&gt;constrainOnly(true)-&gt;resize(1800); ?&gt;&quot;</pre>
 
-        private function outputConfig()
-        {
-            die(Mage::app()-&gt;getConfig()-&gt;getNode()-&gt;asXML());
-        }
-    }
-</pre>
-                    <p>That's it. Clear your OpenMage cache again and then load any OpenMage URL with a <tt>showConfig=true</tt>
-                        query string</p>
-                    <pre>http://openmage.example.com/?showConfig=true</pre>
-                    <a name="3"></a>
-                    <h2>What am I looking at?</h2>
-                    <p>You should be looking at a giant XML file. This describes the state of your OpenMage system. It
-                        lists all modules, models, classes, event listeners or almost anything else you could think
-                        of.</p>
-                    <p>For example, consider the config.xml file you created above. If you search the XML file in your
-                        browser for the text <tt>Configviewer_Model_Observer</tt> you'll find your class listed. Every
-                        module's config.xml file is parsed by OpenMage and included in the global config.</p>
-                    <a name="4"></a>
-                    <h2>Why Do I Care?</h2>
-                    <p>Right now this may seem esoteric, but this config is key to understanding OpenMage. Every module
-                        you'll be creating will add to this config, and anytime you need to access a piece of core
-                        system functionality, OpenMage will be referring back to the config to look something up. </p>
-                    <p>A quick example: As an MVC developer, you've likely worked with some kind of helper class,
-                        instantiated something like </p>
-                    <pre>$helper_sales = new HelperSales();</pre>
-                    <p>One of the things OpenMage has done is abstract away PHP's class declaration. In OpenMage, the
-                        above code looks something like </p>
-                    <pre>$helper_sales = Mage::helper('sales');</pre>
-                    <p>In plain english, the static helper method will:
-                    <ol>
-                        <li>Look in the &lt;helpers /&gt; section of the Config.</li>
-                        <li>Within &lt;helpers /&gt;, look for a &lt;sales /&gt; section</li>
-                        <li>Within the &lt;sales /&gt; section look for a &lt;class /&gt; section</li>
-                        <li>Append the part after the slash to the value found in #3 (defaulting to <tt>data</tt> in
-                            this case)
-                        </li>
-                        <li>Instantiate the class found in #4 (Mage_Sales_Helper_Data)</li>
-                    </ol>
-                    <p>While this seems like a lot of work (and it is), the key advantage is by always looking to the
-                        config file for class names, we can override core OpenMage functionality <strong>without</strong>
-                        changing or adding to the core code. This level of meta programming, not usually found in PHP,
-                        allows you to cleanly extend only the parts of the system you need to.</p>
                 </div>
                 <!-- /.content-wrap -->
                 <div class="page-info">
