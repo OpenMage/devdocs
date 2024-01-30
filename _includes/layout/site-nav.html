@@ -6,8 +6,25 @@
 
   <div class="nav-container">
 
-    <a class="logo" href="{% if page.guide_version == site.version or page.guide_version == nil %}{{ site.baseurl }}{% else %}{{ page.baseurl }}{% endif %}/">
-      <img src="{{ site.baseurl }}/assets/i/m-logo.svg" alt=""><img src="{{ site.baseurl }}/assets/i/magento-logo.svg" alt="Magento" class="magento-logo" />
+    <a class="logo" href="{{ site.baseurl }}/">
+      <svg width="257" height="63" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <defs>
+         <style>.ba{fill:#fb0e70;}
+                   .bb{fill:#fff;font-size:45px;}
+                   .bb,.bc{font-family:Poppins-SemiBold, Poppins;font-weight:600;letter-spacing:-0.05em;fill:#F1F1F1}
+                   .bc{fill:#707070;font-size:38px;}</style>
+        </defs>
+        <g class="layer">
+         <title>OpenMage Magento</title>
+         <path class="ba" d="m11,3.25l34,0a8,8 0 0 1 8,8l0,34a0,0 0 0 1 0,0l-42,0a0,0 0 0 1 0,0l0,-42a0,0 0 0 1 0,0z"/>
+         <text class="bb" id="svg_2" x="0" y="47">
+          <tspan x="0" y="47">m</tspan>
+         </text>
+           <text class="bc" transform="translate(56 40)">
+               <tspan x="0" y="0">openmage</tspan>
+           </text>
+        </g> 
+       </svg>
       <span class="site-logo">{{ site.logo }}</span>
     </a>
 

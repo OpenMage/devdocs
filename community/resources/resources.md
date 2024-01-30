@@ -9,12 +9,6 @@ This Community collection of resources links to blog posts, podcasts, presentati
 
 New items will be added incrementally, and older links rotated out. Keep an eye on this space for the latest community resources!
 
-Another community based resource, focused on describing the Magento 2 Environment is the [Magento 2 Awesome List][0]{:target="_blank"}
-
-Do you know of a popular resource about Magento 2 that has been released/published within the past year?
-Does it fill gaps in our current docs and provide important information?
-[Let us know][1]!
-
 {:.bs-callout .bs-callout-info}
 Magento does not officially endorse any of the linked blogs, books, presentation, or podcasts linked below.
 They are listed here because the content has been well received within the Magento community.
@@ -30,9 +24,7 @@ To connect with Magento and the Community, join us on the [Magento Community Eng
 
 We have channels for each project. These channels are recommended for new members:
 
-- [general][]: Open chat for introductions and Magento 2 questions
 - [github][]: Support for GitHub issues, pull requests, and processes
-- [public-backlog][]: Discussions of the Magento 2 backlog
 - [devdocs][]: Documentation contribution support
 
 ## Resources and guides
@@ -44,35 +36,12 @@ We have channels for each project. These channels are recommended for new member
 
 ## Magento APIs
 
-- *Presentation* [Magento 2 Integrations][2] by [Joshua Warren][31]
 - *Presentation* [Integrations with Magento, end to end story: RabbitMQ, APIs][3] by Eugene Tulika
 
-## Install/deploy
-
-- *Presentation* [48 Hour Launches and Other Lessons Learned With Large-Scale Digital Transformations][29] by Joshua Warren of Creatuity
-- *Blog post* [Magento 2 - Launch Checklist][21] by Syed Muneeb Ul Hasan 
-- *Presentation* [Magento 2 Deployment: What you should know][4] by Olga KopyLova
-- *Blog post* [Magento 2 deployment without the downtime][5] by Robert Egginton
-- *Blog post* [Deploying Magento 2 - History & Overview][6] by Matthias Walter
-- *Blog post* [Deploying Magento 2 using Capistrano][17] by David Alger
-- *Blog post* [Deploying Magento 2 with Composer and Envoyer][16] by Nick Rigby
-- *GitHub* [Magento 2 Docker][18] by meanbee
 
 ## Automated Testing
 
 - *Presentation* [Writing testable code][10] by Vinai Kopp (**Bonus:** [Video Presentation][11])
-- *Book* [Test Driven Magento Extension Development][12] by Allan MacGregor
-- *Blog post* [Integration Tests with Magento 2][19] by Andreas von Studnitz
-
-## Mastering Magento 2
-
-- *Book* [Magento 2 DIY][7] by Viktor Khliupko
-- *Book* [Magento 2 Cookbook][8] by Ray Bogman and Vladimir Kerkhoff
-- *Presentation* [Staging and Preview][9] by Igor Melnykov
-- *Blog post* [Introducing UI Components][13] by Alan Storm
-- *Presentation* [Micro Services][14] by Ivan Chepurnyi
-- *Blog post* [10 Practical Rules to Build High Quality Magento 2 Module][20] by Max Pronko
-- *Presentation* [Stop Flushing the F#@king Cache, Indexing and Caching in Magento 2][22] by John Hughes
 
 ## Performance
 

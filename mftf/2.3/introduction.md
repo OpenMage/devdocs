@@ -137,6 +137,6 @@ Follow the [MFTF project] and [contribute on Github].
 
 <!-- Link definitions -->
 [contribute on Github]: https://github.com/magento/magento2-functional-testing-framework/blob/master/.github/CONTRIBUTING.md
-[Functional Testing Framework]: {{ site.gdeurl23 }}mtf/mtf_introduction.html
+[Functional Testing Framework]: {{ site.gdeurl23 }}mtf/introduction.html
 [MFTF project]: https://github.com/magento/magento2-functional-testing-framework
 [{{page.mftf-release}}]: https://github.com/magento/magento2-functional-testing-framework/releases/tag/{{page.mftf-release}}

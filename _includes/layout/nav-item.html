@@ -15,7 +15,7 @@
     {% if page.guide_version %}
       {% assign base = page.baseurl %}
     {% else %}
-      {% assign base = site.version | prepend: "/guides/v" | prepend: site.baseurl %}
+      {% assign base = site.version | prepend: "/guides/v19.x" | prepend: site.baseurl %}
     {% endif %}
   {% endif %}
   {% if item.url contains 'http' %}

@@ -8,7 +8,7 @@ menu_order: 100
 menu_node: parent
 ---
 
-If you have issues, receive error messages, or need additional How Tos, see our [Magento Support Knowledge Base](https://support.magento.com). The knowledge base includes a growing number of troubleshooting, how to, and FAQ articles for Magento 2 Commerce, Commerce (Cloud), and Open Source. We are constantly adding new content for Magento platform, services, modules, and much more.
+If you have issues, receive error messages, or need additional How Tos, see our [Magento Support Knowledge Base](https://support.magento.com). The knowledge base includes a growing number of troubleshooting, how to, Commerce (Cloud), and Open Source. We are constantly adding new content for Magento platform, services, modules, and much more.
 
 * Search using keywords to find answers and help
 * Browse through various categories

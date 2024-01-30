@@ -1,0 +1,440 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Frontend Developer Guide</title>
+    <meta name="description" content="OpenMage LTS Developer Documentation.">
+
+    <link rel="stylesheet" href="/assets/css/app.css"/>
+    <link rel="stylesheet" href="/assets/css/print.css" media="print"/>
+    <link rel="stylesheet" type="text/css" href="/common/css/stylesheet.css">
+
+    <link rel="stylesheet" href="/common/css/stylesheet-fonts.css" type="text/css">
+    <link rel="stylesheet" href="/common/css/devdocs.css"/>
+    <link rel="alternate" type="application/rss+xml" title="OpenMage DevDocs RSS" href="/feed.xml"/>
+
+    <script>
+        var baseUrl = "";
+        var algolia = {
+            id: "E642SEDTHL",
+            index: "devdocs",
+            key: "d2d0f33ab73e291ef8d88d8b565e754c"
+        };
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/common/css/favicon.ico">
+    <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/common/images/openmage-touch-icon.png" sizes="96x96">
+</head>
+<!-- Magento for Developers: Part 1&mdash;Introduction to Magento -->
+<!-- magento-for-dev-part-1-introduction-to-magento -->
+<body class="layout-default">
+<header class="site-header">
+    <nav class="site-nav">
+        <div class="menu-btn">
+            <button id="menu-btn" class="menu-trigger menu-icon" aria-haspopup="true" aria-controls="nav-main"></button>
+        </div>
+        <div class="nav-container">
+            <a class="logo" href="/">
+                <svg width="257" height="63" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>.ba {
+                            fill: #fb0e70;
+                        }
+
+                        .bb {
+                            fill: #fff;
+                            font-size: 45px;
+                        }
+
+                        .bb, .bc {
+                            font-family: Poppins-SemiBold, Poppins;
+                            font-weight: 600;
+                            letter-spacing: -0.05em;
+                            fill: #F1F1F1
+                        }
+
+                        .bc {
+                            fill: #707070;
+                            font-size: 38px;
+                        }</style>
+                    </defs>
+                    <g class="layer">
+                        <title>OpenMage Magento</title>
+                        <path class="ba"
+                              d="m11,3.25l34,0a8,8 0 0 1 8,8l0,34a0,0 0 0 1 0,0l-42,0a0,0 0 0 1 0,0l0,-42a0,0 0 0 1 0,0z"/>
+                        <text class="bb" id="svg_2" x="0" y="47">
+                            <tspan x="0" y="47">m</tspan>
+                        </text>
+                        <text class="bc" transform="translate(56 40)">
+                            <tspan x="0" y="0">openmage</tspan>
+                        </text>
+                    </g>
+                </svg>
+                <span class="site-logo">DevDocs</span>
+            </a>
+            <div id="nav-main" class="nav-main-wrap" aria-labelledby="menu-btn">
+                <!-- Main Navigation -->
+                <ul class="nav-main" role="menubar">
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Setup</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class="active " role="menuitem">
+                                    <a href="/guides/v19.x/install-gde/install-flow-diagram.html">Installation Guide</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/migration/bk-migration-guide.html">Migration Guide</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/release-notes/bk-release-notes.html">Release Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Development</span>
+                        <div class="nav-popup">
+                            <div class="nav-section">
+                                <div class="nav-section-title">Backend</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Architecture</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">PHP Developer Guide</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Extension Developer Best Practices</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Module Reference Guide</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Coding Standards</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="https://github.com/OpenMage/magento-lts">Contribute!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <div class="nav-section-title">Frontend</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Frontend Developer Guide</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <div class="nav-section-title">API</div>
+                                <ul>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/">Get Started with Magento Web APIs</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/api/rest-api-index.html">REST API Reference</a>
+                                    </li>
+                                    <li class=" " role="menuitem">
+                                        <a href="/guides/v19.x/api/soap-api-index.html">SOAP API Reference</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Testing</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <a href="/mftf/2.3/introduction.html">Functional Acceptance Testing (MFTF)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Functional Areas</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <span>Advanced Reporting</span>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/howdoi/checkout/checkout_overview.html">Checkout</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/inventory/index.html">Inventory Management</a>
+                                </li>
+                                <li class=" " role="menuitem">
+                                    <a href="http://omsdocs.magento.com/en/">Order Management</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
+                        <span tabindex="-1">Old Documantation</span>
+                        <div class="nav-popup">
+                            <ul>
+                                <li class=" " role="menuitem">
+                                    <a href="/guides/v19.x/">Magento 1 Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul><!-- /.nav-main -->
+            </div>
+            <div class="search-btn">
+                <button class="search-trigger search-icon" aria-label="Search"></button>
+            </div>
+            <form class="quick-search" action="/search.html" method="get" novalidate="novalidate">
+                <input type="search" name="q" placeholder="Search"/>
+                <button class="quick-search-close" aria-label="Close Search">&times;</button>
+            </form>
+        </div>
+    </nav><!-- #site-nav -->
+    <div class="nav-main-fader"></div>
+</header>
+<div class="global-wrapper">
+    <div class="main-container">
+        <a id="main-content"></a>
+        <div class="content-container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <a href="#" data-proofer-ignore class="toc-toggler">Table of Contents</a>
+                <div class="sidebar-wrapper">
+                    <h4 class="guide-title">Frontend Developer Guide</h4>
+                    <div class="collapsible-navigation">
+                        <ul>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-1.html">
+                                    Introduction
+                                </a>
+                            </li>
+                            <li class=" " role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-2.html">
+                                    Supported Devices and Browsers
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-3.html">
+                                    Understanding the Changes in the Responsive Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-4.html">
+                                    Installing Compass and Sass
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-5.html">
+                                    Disabling the Magento Cache
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html">
+                                    Copying Files to Create Your Custom Theme
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-7.html">
+                                    Responsive Theme Reference
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-8.html">
+                                    Removing Sample Data Assets
+                                </a>
+                            </li>
+                            <li class="active" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-9.html">
+                                    Advanced Topics
+                                </a>
+                            </li>
+                            <li class="" role="menuitem">
+                                <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-10.html">
+                                    Getting Help With Your Theme
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- /sidebar -->
+            <section class="content">
+                <div class="content-wrap">
+                    <!-- page-header -->
+                    <section class="page-intro">
+                        <h1 class="page-heading">Advanced Topics</h1>
+                    </section>
+
+                    <p>After you get familiar with the new structure, we encourage you to read these topics to fully take advantage of
+                        responsive web design.</p>
+
+                    <h4>Getting Your Theme Ready for Production</h4>
+
+                    <p>To prepare your responsive theme for production, you should update <tt>config.rb</tt> in your theme directory to
+                        use these values:</p>
+                    <pre>output_style = &#58;compressed
+environment = &#58;production</pre>
+
+                    <p>After you do this, you should recompile all of your Sass files&mdash;you can do this on the command line by
+                        running these commands inside your theme directory: <tt>compass clean</tt> and then <tt>compass compile</tt>.
+                        Finally, deploy the compiled CSS to your production system.</p>
+
+                    <h2 id="sass-fallback-structure">Sass Fallback Structure</h2>
+                    <p>We recommend copying all of the Sass files from <tt>skin/frontend/rwd/default/scss</tt> to <tt>skin/frontend/custompackage/customtheme/scss</tt>
+                        to make it easy to get started with custom theme development. The downside of this approach is that it results
+                        in duplicating many files that you never edit directly.</p>
+                    <p>In the end, your custom theme must include all Sass partials you want to override. There are at least two ways to
+                        do this:</p>
+                    <ul>
+                        <li>If you followed the setup instructions in <a href="{{ site.v1xgdeurl }}/magefordev/mage-for-frontend-dev-6.html#theme-structure">Step 1: Creating a Directory Structure
+                            for Your Responsive Theme</a>, you must delete some files from your custom theme.<br/>
+                            Delete the following directories to remove all the Sass partials that you copied from
+                            <tt>rwd/default</tt>:<br/>
+                            <pre>skin/frontend/custompackage/customtheme/scss/core/
+skin/frontend/custompackage/customtheme/scss/function/
+skin/frontend/custompackage/customtheme/scss/layout/
+skin/frontend/custompackage/customtheme/scss/mixin/
+skin/frontend/custompackage/customtheme/scss/module/
+skin/frontend/custompackage/customtheme/scss/override/
+skin/frontend/custompackage/customtheme/scss/vendor/</pre>
+                            The following files should now be located in <tt>skin/frontend/custompackage/customtheme/scss</tt>:<br/>
+                            <pre>_var.scss
+_core.scss
+styles-ie8.scss
+styles.scss
+scaffold-forms.scss
+_custom_core.scss
+_framework.scss</pre>
+                        </li>
+                        <li>If you're familiar with Magento theme development and you did <em>not</em> already copy Sass partials, copy
+                            <em>only</em> the Sass partials you want to override from <tt>rwd/default</tt> to <tt>skin/frontend/custompackage/customtheme/scss</tt>.
+                        </li>
+                    </ul>
+                    <p>Now you can set up a fallback structure:</p>
+                    <ol>
+                        <li>Add the following line to <tt>skin/frontend/rwd/default/config.rb</tt> (omit the first line if you're using
+                            CE):
+                            <pre>add_import_path &quot;../../../rwd/enterprise/scss&quot;
+add_import_path &quot;../../../rwd/default/scss&quot;</pre>
+                            The preceding causes Compass to look for Sass files in <tt>skin/frontend/rwd/enterprise/scss</tt> first and
+                            then in <tt>skin/frontend/rwd/default/scss</tt> if they can't be found in <tt>skin/frontend/custompackage/customtheme/scss</tt>.
+                        </li>
+                        <li>Following is what to do with copies of Sass files from <tt>rwd/default</tt>:<br/>
+                            <ul>
+                                <li><tt>styles.scss</tt>, <tt>styles-ie8.scss</tt>: You must copy these files into your custom theme so
+                                    that Compass knows which files to compile into CSS files.
+                                </li>
+                                <li><tt>_core.scss</tt>, <tt>framework.scss</tt>: You must copy these files into your custom theme so
+                                    Compass looks in the <tt>custompackage/customtheme</tt> directory for any of the files imported by
+                                    these two files.
+                                </li>
+                                <li><tt>_var.scss</tt>: You'll typically edit the values in this file for your custom theme.<br/>
+                                    If you don't like the idea of editing this file and want to override its values with a <tt>_var_custom.scss</tt>
+                                    file, make sure it gets imported immediately after <tt>_var.scss</tt>.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>As a reminder, to override Sass partials in <tt>rwd/default</tt>, you must copy them into your custom theme
+                            so they'll get included by Compass.<br/>
+                            <strong>Note</strong>: If you're using <tt>compass watch</tt> to recompile your Sass, you must stop and
+                            restart Compass any time you copy a new Sass file into your custom theme. Otherwise, the Compass compiler
+                            won't know about the existence of the new file.<br/>
+                            To avoid having to stop and restart <tt>compass watch</tt>, start your project by copying all Sass files
+                            from <tt>rwd/default</tt> into your custom theme, and then delete all unchanged Sass files at the end of
+                            your project.
+                        </li>
+                    </ol>
+
+                    <h2 id="scaffold-forms">Scaffold Forms</h2>
+                    <p>The Magento responsive theme ships with <tt>skin/frontend/rwd/default/scss/scaffold-forms.scss</tt> that has
+                        styles that cause the labels of long forms (for example, the Billing Information step of checkout) to display to
+                        the left of their associated input on larger viewports (as opposed to on top). This layout is intended to make
+                        long forms seem less intimidating to users.</p>
+                    <p>However, these styles are not currently implemented because the Magento responsive theme must work well with
+                        internationalization (where the length of labels can vary greatly, thereby impacting the scaffold form
+                        layout).</p>
+                    <p>It's up to you whether or not to use these styles. To do so, move <tt>skin/frontend/rwd/default/scss/scaffold-forms.scss</tt>
+                        to <tt>core/_scaffold-forms.scss</tt> and edit <tt>scss/_core.scss</tt> to include it.</p>
+
+                    <h2>High-Definition Images</h2>
+                    <p>The responsive theme has no high-resolution image solution for product listing pages. Refer to <a
+                            href="https://speakerdeck.com/brendanfalkowski/responsive-ecommerce-part-two#114" target="_blank">slides
+                        starting at 114</a> of Brendan Falkowski's Imagine 2013 talk for implementation suggestions. For a 2x solution,
+                        PictureFill (or similar polyfill) could be used, although it would need to be integrated with ElevateZoom.</p>
+                    <div class="msg-box important"><img src="{{ site.baseurl }}{{ site.v1xgdeurl }}images/icon-note.png" alt="note" align="left"
+                                                        width="40"><span><strong>Note</strong>: Category banners and product detail pages use a 1.5x image solution.
+    </span>
+                    </div>
+
+                    <p>Magento does not resize the main product photo on product detail pages, so you must implement high-resolution
+                        support in your responsive theme. You must be careful with this if you have very large product photos because it
+                        could drastically impact performance.</p>
+                    <p>To constrain the size of your main product photo, open <tt>app/design/frontend/rwd/default/template/catalog/product/view/media.phtml</tt>
+                        and modify this line:
+                    <pre>&lt;?php echo $this-&gt;helper('catalog/image')-&gt;init($_product, 'image') ?&gt;</pre>
+                    to something like:
+                    <pre>src=&quot;&lt;?php echo $this-&gt;helper('catalog/image')-&gt;init($_product, 'image')-&gt;constrainOnly(true)-&gt;resize(1800); ?&gt;&quot;</pre>
+
+                </div>
+                <!-- /.content-wrap -->
+                <div class="page-info">
+                    <div class="github-link">
+                        <a class="improve-page"
+                           href="https://github.com/OpenMage/devdocs/blob/master/guides/v19.x/install-gde/install-flow-diagram.md"
+                           target="_blank">
+                            Edit this page on GitHub
+                        </a>
+                    </div>
+                    <div class="new-issue">
+                        <a href="https://github.com/OpenMage/devdocs/issues/new?title=Feedback on page: /guides/v19.x/install-gde/install-flow-diagram.html"
+                           target="_blank">
+                            Give us feedback
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div> <!-- /.content-container -->
+    </div>
+    <!-- /.main-container -->
+</div>
+<!-- /#gl-wrapper -->
+
+<!-- footer-->
+<div class="page-footer">
+    <div class="container">
+        <div class="copyright-links">
+            <ul class="nav footer-links">
+                <li class=" " role="menuitem">
+                    <a href="https://github.com/OpenMage/devdocs/blob/master/.github/CONTRIBUTING.md">Become a
+                        Contributor</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="https://glossary.magento.com/">Glossary</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="/guides/v19.x/release-notes/bk-release-notes.html">Release Notes</a>
+                </li>
+                <li class=" " role="menuitem">
+                    <a href="/magento-third-party.html">Third-Party Licenses</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-date">&copy; 2024 OpenMage. All rights reserved.</div>
+    </div>
+</div>
+<!-- / #footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="/assets/js/app.min.js"></script>
+</body>
+</html>
