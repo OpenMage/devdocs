@@ -476,7 +476,7 @@ $bp-xlarge: 1199px;</pre>
 @include bp(min-width, $bp-medium+1) {
     /* These styles will only display on viewports larger than or equal to 771px (770px + 1px) */
 }
-    </pre></code>
+/pre></code>
                     <p>generates this CSS:</p>
                     <code><pre>
 @media only screen and (max-width: 770px) {
@@ -485,7 +485,7 @@ $bp-xlarge: 1199px;</pre>
 @media only screen and (min-width: 771px) {
     /* These styles will only display on viewports larger than or equal to 771px (770px + 1px) */
 }
-    </pre></code>
+</pre></code>
                     <p>The breakpoint variables are intended to be used with <tt>max-width</tt> by default. When you use the breakpoint
                         with <tt>min-width</tt>, you should add a pixel <tt>($bp-medium+1)</tt> so the <tt>min-width</tt> and <tt>max-width</tt>
                         styles don't both get applied to the same viewport size.</p>
